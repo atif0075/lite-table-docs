@@ -5,7 +5,7 @@
     <section class="pt-20 px-3 pb-10">
         <div>Vue 3 Table Lite is supported 3 rendering mode</div>
         <div v-for="(items, index) in usageList" :key="index">
-            <h1 class="head">{{ items.title }}</h1>
+            <h1 :id="items.id" class="head">{{ items.title }}</h1>
             <div class="pt-2">
                 {{ items.desc }}
             </div>
@@ -44,6 +44,7 @@ scrollBehavior();
 let usageList = ref([
     {
         title: "Default Mode",
+        id:"defMode",
         desc: "If you are always use API to get rows data. choose this mode.",
         tempCode: `
 <table-lite
@@ -145,6 +146,7 @@ let usageList = ref([
     },
     {
         title: "V-slot Mode",
+         id:"slotMode",
         desc: "If you are use API to get rows data and need use vue components on rendering. choose this mode.",
         tempCode: `
     <table-lite
@@ -251,6 +253,7 @@ let usageList = ref([
     },
     {
         title: "Static Mode",
+         id:"staticMode",
         desc: "If you are not use API to get rows data. choose this mode.",
         tempCode: ` 
     <table-lite
