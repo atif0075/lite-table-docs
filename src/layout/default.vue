@@ -190,6 +190,8 @@ let onresize = () => {
   scWidth.value = document.body.clientWidth;
   if (scWidth.value < 1024) {
     toggle.value === false;
+  } else {
+    toggle.value === true;
   }
 };
 window.addEventListener("resize", onresize);
