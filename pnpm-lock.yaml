@@ -7,7 +7,6 @@ specifiers:
   vue: ^3.2.25
   vue-code-highlight: ^0.7.8
   vue-router: ^4.0.15
-  vue3-click-away: ^1.2.4
   vue3-table-lite: ^1.2.3
   windicss: ^3.5.4
 
@@ -15,7 +14,6 @@ dependencies:
   vue: 3.2.36
   vue-code-highlight: 0.7.8
   vue-router: 4.0.15_vue@3.2.36
-  vue3-click-away: 1.2.4
   vue3-table-lite: 1.2.3
 
 devDependencies:
@@ -697,10 +695,6 @@ packages:
       '@vue/runtime-dom': 3.2.36
       '@vue/server-renderer': 3.2.36_vue@3.2.36
       '@vue/shared': 3.2.36
-    dev: false
-
-  /vue3-click-away/1.2.4:
-    resolution: {integrity: sha512-O9Z2KlvIhJT8OxaFy04eiZE9rc1Mk/bp+70dLok68ko3Kr8AW5dU+j8avSk4GDQu94FllSr4m5ul4BpzlKOw1A==}
     dev: false
 
   /vue3-table-lite/1.2.3:
