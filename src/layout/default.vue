@@ -1,7 +1,6 @@
 <template>
   <section class="w-full flex bg-dark">
     <main
-     
       :class="[toggle ? 'hidden' : ' animate-slide-in-left']"
       class="w-[80%] absolute z-9999 bg-dark lg:(w-[20%] static animate-none) min-h-screen h-screen overflow-auto"
     >
@@ -181,7 +180,7 @@
 </template>
 <script setup>
 import { onMounted, ref } from "vue";
-let toggle = ref(true);
+let toggle = ref(false);
 
 onMounted(() => {
   onresize();
@@ -194,7 +193,6 @@ let onresize = () => {
   }
 };
 window.addEventListener("resize", onresize);
-
 </script>
 
 <style lang="postcss">
