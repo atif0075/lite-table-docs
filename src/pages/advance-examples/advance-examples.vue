@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Header title="Simple Examples" />
+    <Header title="Advanced Examples" />
     <section class="pt-20 px-3 pb-10">
       <div id="customize-display-data">
         <h1 class="head">Customize display data</h1>
