@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-dark text-white">
+  <section class="bg-dark min-h-screen text-white">
     <div
       class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex"
     >
