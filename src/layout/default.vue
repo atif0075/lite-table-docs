@@ -193,6 +193,7 @@ let onresize = () => {
   } else {
     toggle.value === true;
   }
+  // updated
 };
 window.addEventListener("resize", onresize);
 </script>
