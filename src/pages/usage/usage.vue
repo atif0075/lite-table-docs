@@ -10,7 +10,7 @@
                 {{ items.desc }}
             </div>
             <h1 class="text-sm font-semibold py-2">Template:</h1>
-            <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded">
+            <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto">
             <div v-highlight>
                 <pre class="language-vue">
                  <code >

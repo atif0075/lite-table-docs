@@ -564,7 +564,7 @@
                 </h1>
                 <div
                   v-highlight
-                  class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded"
+                  class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto"
                 >
                   <pre class="language-vue">
                  <code >
@@ -575,7 +575,7 @@
                 <h1 class="text-sm font-semibold py-2">Usage (All to same)</h1>
                 <div
                   v-highlight
-                  class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded"
+                  class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto"
                 >
                   <pre class="language-vue">
                  <code >
@@ -591,7 +591,7 @@
     </div>
   </section>
 </template>
-<script  setup>
+<script setup>
 import { ref } from "vue";
 import Header from "../../components/Header.vue";
 let scrollBehavior = () => {
