@@ -7,9 +7,14 @@
       <div
         class="h-16 p-2 fixed bg-dark w-[20%] flex flex-col justify-center border-b border-opacity-60 border-light-dark"
       >
-        <h1 class="text-gray font-bold text-xl tracking-wider hidden lg:block">
-          Vue3 Table Lite
-        </h1>
+        <div
+          class="text-gray font-bold text-xl tracking-wider hidden lg:flex items-center"
+        >
+          <div>
+            <img class="w-8 mx-1" src="../assets/logo.svg" alt="logo" />
+          </div>
+          <h1>Vue3 Table Lite</h1>
+        </div>
       </div>
 
       <div>

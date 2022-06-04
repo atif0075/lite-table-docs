@@ -4,6 +4,9 @@
       class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex"
     >
       <div class="max-w-xl mx-auto text-center">
+        <div class="flex justify-center items-center">
+          <img class="w-28" src="../assets/logo.svg" alt="logo" />
+        </div>
         <h1 class="text-3xl font-extrabold sm:text-5xl">
           Vue 3 Table Lite
           <strong class="font-extrabold text-green sm:block">

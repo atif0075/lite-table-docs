@@ -2,7 +2,7 @@
   <section>
     <Header title="QuickStart" />
   </section>
-  <section class="pt-20 px-3">
+  <section class="pt-20 px-3 py-12">
     <div>
       A simple and lightweight data table component for Vue.js 3. Features
       sorting, paging, row check, dynamic data rendering, supported TypeScript,
