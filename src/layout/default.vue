@@ -158,6 +158,7 @@
       </div>
     </main>
     <main
+     
       class="w-full lg:w-[80%] text-gray h-screen overflow-auto overflow-x-hidden min-h-screen"
     >
       <button
@@ -177,7 +178,7 @@
           ></path>
         </svg>
       </button>
-      <div>
+      <div  @click="clickAway">
         <router-view id="secRoute" />
       </div>
     </main>
@@ -201,6 +202,13 @@ let onresize = () => {
   // updated
 };
 window.addEventListener("resize", onresize);
+
+let clickAway = () => {
+  if (scWidth.value < 1024 && toggle.value==false) {
+    toggle.value = true;
+    console.log("Hello");
+  }
+};
 </script>
 
 <style lang="postcss">
