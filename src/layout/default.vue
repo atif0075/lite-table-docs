@@ -206,7 +206,7 @@ window.addEventListener("resize", onresize);
 let clickAway = () => {
   if (scWidth.value < 1024 && toggle.value==false) {
     toggle.value = true;
-    console.log("Hello");
+
   }
 };
 </script>
