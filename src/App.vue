@@ -9,8 +9,10 @@
 <style>
 * {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
+
 .quick-btn {
-  @apply px-4 py-2 bg-light-dark text-white rounded;
+  @apply px-4 py-2  bg-light-dark text-white rounded;
 }
 </style>

@@ -37,7 +37,7 @@
     </section>
   </section>
 </template>
-<script  setup>
+<script setup>
 import Header from "../../components/Header.vue";
 import CusDisplayData from "../../components/advance-examples/cus-display-data.vue";
 import Filter from "../../components/advance-examples/filter.vue";
