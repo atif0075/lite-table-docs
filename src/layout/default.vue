@@ -152,6 +152,11 @@
                   >Catch Row Clicked</a
                 >
               </li>
+              <li>
+                <a href="#fixed-first-column" class="list-item"
+                  >Fixed First Colmun</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
