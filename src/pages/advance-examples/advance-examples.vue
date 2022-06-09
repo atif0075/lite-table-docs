@@ -34,7 +34,7 @@
         <h1 class="head">Catch Row clicked</h1>
         <CatchRow class="pt-3" />
       </div>
-      <div id="catch-row-clicked">
+      <div id="fixed-first-column">
         <h1 class="head">Fixed First Column</h1>
         <FixedFirstColumn class="pt-3" />
       </div>
