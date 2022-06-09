@@ -39,14 +39,16 @@ const routes = [
       },
     ],
   },
- 
+
 ];
 const router = createRouter({
   history: createWebHistory(),
   routes,
   linkExactActiveClass: "border-l-4 border-green",
-  scrollBehavior() {
-    document.getElementById("secRoute")?.scrollIntoView({ behavior: "smooth" });
+  scrollBehavior(to) {
+    if (to.hash) {
+      document.querySelector(to.hash)?.scrollIntoView(true);
+    }
   },
 });
 
