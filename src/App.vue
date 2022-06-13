@@ -6,6 +6,27 @@
   </main>
 </template>
 
+<script setup>
+// Plugins
+import { provideI18n } from "./plugins/i18n";
+
+// Language Files
+import en from "./locales/en.json";
+import jp from "./locales/jp.json";
+import tw from "./locales/tw.json";
+import cn from "./locales/cn.json";
+
+provideI18n({
+  locale: "en",
+  messages: {
+    en: en,
+    jp: jp,
+    tw: tw,
+    cn: cn
+  },
+});
+</script>
+
 <style>
 * {
   scroll-behavior: smooth;

@@ -1,30 +1,28 @@
 <template>
   <section>
-    <Header title="QuickStart" />
+    <Header :title="i18n.$t('quick_start')" />
   </section>
   <section class="pt-20 px-3 py-12">
-    <div>
-      A simple and lightweight data table component for Vue.js 3. Features
-      sorting, paging, row check, dynamic data rendering, supported TypeScript,
-      and more.
-    </div>
-    <h1 class="head">Install</h1>
+    <div>{{ i18n.$t('component_description') }}</div>
+    <h1 class="head">{{ i18n.$t('install') }}</h1>
     <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-4 rounded">
       <code>npm install vue3-table-lite --save</code>
     </p>
-    <h1 class="head">Include</h1>
+    <h1 class="head">{{ i18n.$t('include') }}</h1>
     <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-4 rounded">
       <code>import VueTableLite from 'vue3-table-lite'</code>
     </p>
-    <h1 class="head">TypeScript Include</h1>
+    <h1 class="head">TypeScript {{ i18n.$t('include') }}</h1>
     <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-4 rounded">
       <code>import VueTableLite from 'vue3-table-lite/ts'</code>
     </p>
   </section>
 </template>
-<script  setup>
-import { ref } from "vue";
+
+<script setup>
 import Header from "../../components/Header.vue";
+import { useI18n } from "../../plugins/i18n";
+const i18n = useI18n();
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });
 };
