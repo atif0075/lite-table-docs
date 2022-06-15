@@ -95,6 +95,7 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { useI18n } from "../plugins/i18n";
 const i18n = useI18n();
 let showLanguageSelector = ref(false);
