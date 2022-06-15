@@ -18,140 +18,27 @@
       </div>
 
       <div>
-        <ul class="p-2 pt-20">
+        <ul v-for="(menu, i) in menus" :key="i" class="p-2" :class="{'pt-20': i ==0 }">
           <li>
-            <router-link to="/quick-start" type="button" class="ulBtn">
+            <router-link :to="menu.url" type="button" class="ulBtn">
               <span
                 class="flex-1 text-left whitespace-nowrap"
                 sidebar-toggle-item
-                >Quick Start</span
+                >{{ menu.title }}</span
               >
             </router-link>
             <ul class="py-2 space-y-2 capitalize">
-              <li>
-                <a href="#install" class="list-item">Install</a>
-              </li>
-              <li>
-                <a href="#include" class="list-item">Include</a>
-              </li>
-              <li>
-                <a href="#typescript" class="list-item">TypeScript</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="p-2">
-          <li>
-            <router-link to="/usage" type="button" class="ulBtn">
-              <span
-                class="flex-1 text-left whitespace-nowrap"
-                sidebar-toggle-item
-                >Usage</span
-              >
-            </router-link>
-            <ul class="py-2 space-y-2 capitalize">
-              <li>
-                <a href="#defMode" class="list-item">Default Mode</a>
-              </li>
-              <li>
-                <a href="#slotMode" class="list-item">V-slot Mode</a>
-              </li>
-              <li>
-                <a href="#staticMode" class="list-item">Static Mode</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="p-2">
-          <li>
-            <router-link to="/api-reference" type="button" class="ulBtn">
-              <span
-                class="flex-1 text-left whitespace-nowrap"
-                sidebar-toggle-item
-                >API Reference</span
-              >
-            </router-link>
-            <ul class="py-2 space-y-2 capitalize">
-              <li>
-                <a href="#props" class="list-item">Props</a>
-              </li>
-              <li>
-                <a href="#events" class="list-item">Event</a>
-              </li>
-              <li>
-                <a href="#slots" class="list-item">Slots</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="p-2">
-          <li>
-            <router-link to="/simple-examples" type="button" class="ulBtn">
-              <span
-                class="flex-1 text-left whitespace-nowrap"
-                sidebar-toggle-item
-                >Simple example</span
-              >
-            </router-link>
-            <ul class="py-2 space-y-2 capitalize">
-              <li>
-                <a href="#defMode" class="list-item">Default Mode</a>
-              </li>
-              <li>
-                <a href="#slotMode" class="list-item">V-slot Mode</a>
-              </li>
-              <li>
-                <a href="#staticMode" class="list-item">Static Mode</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="p-2">
-          <li>
-            <router-link to="/advance-examples" type="button" class="ulBtn">
-              <span
-                class="flex-1 text-left whitespace-nowrap"
-                sidebar-toggle-item
-                >Advanced Example</span
-              >
-            </router-link>
-            <ul class="py-2 space-y-2 capitalize">
-              <li>
-                <a href="#customize-display-data" class="list-item"
-                  >Customize Display Data</a
+              <template v-for="(submenu, j) in menu.submenu" :key="j">
+                <router-link
+                  :to="menu.url + submenu.hash"
+                  custom
+                  v-slot="{ href, navigate }"
                 >
-              </li>
-              <li>
-                <a href="#filter" class="list-item">Filter</a>
-              </li>
-              <li>
-                <a href="#asynchronous-filter" class="list-item"
-                  >Asynchronous Filter</a
-                >
-              </li>
-              <li>
-                <a href="#customize-style" class="list-item">Customize Style</a>
-              </li>
-              <li>
-                <a href="#customize-style-2" class="list-item"
-                  >Customize Style 2</a
-                >
-              </li>
-              <li>
-                <a href="#customize-message" class="list-item"
-                  >Customize Message</a
-                >
-              </li>
-              <li>
-                <a href="#customize-page-dropdown" class="list-item"
-                  >Customize Page's Dropdown</a
-                >
-              </li>
-              <li>
-                <a href="#catch-row-clicked" class="list-item"
-                  >Catch Row Clicked</a
-                >
-              </li>
+                  <li class="list-item">
+                    <a :href="href" @click="navigate">{{ submenu.title}}</a>
+                  </li>
+                </router-link>
+              </template>
             </ul>
           </li>
         </ul>
@@ -178,7 +65,7 @@
         </svg>
       </button>
       <div @click="clickAway">
-        <router-view id="secRoute" />
+        <router-view />
       </div>
     </main>
   </section>
@@ -207,6 +94,123 @@ let clickAway = () => {
     toggle.value = true;
   }
 };
+
+const menus = ref([
+  {
+    title: 'Quick start',
+    url: '/quick-start',
+    submenu: [
+      {
+        title: 'Install',
+        hash: '#install',
+      },
+      {
+        title: 'Include',
+        hash: '#include',
+      },
+      {
+        title: 'TypeScript',
+        hash: '#typescript',
+      }
+    ]
+  },
+  {
+    title: 'Usage',
+    url: '/usage',
+    submenu: [
+      {
+        title: 'Default mode',
+        hash: '#defMode',
+      },
+      {
+        title: 'V-slot mode',
+        hash: '#slotMode',
+      },
+      {
+        title: 'Static mode',
+        hash: '#staticMode',
+      }
+    ]
+  },
+  {
+    title: 'Api reference',
+    url: '/api-reference',
+    submenu: [
+      {
+        title: 'Props',
+        hash: '#props',
+      },
+      {
+        title: 'Events',
+        hash: '#events',
+      },
+      {
+        title: 'Slots',
+        hash: '#slots',
+      }
+    ]
+  },
+  {
+    title: 'Simple Examples',
+    url: '/simple-examples',
+    submenu: [
+      {
+        title: 'Default mode',
+        hash: '#defMode',
+      },
+      {
+        title: 'V-slot mode',
+        hash: '#slotMode',
+      },
+      {
+        title: 'Static mode',
+        hash: '#staticMode',
+      }
+    ]
+  },
+  {
+    title: 'Advance examples',
+    url: '/advance-examples',
+    submenu: [
+      {
+        title: 'Customize display data',
+        hash: '#customize-display-data',
+      },
+      {
+        title: 'Filter',
+        hash: '#filter',
+      },
+      {
+        title: 'Asynchronous filter',
+        hash: '#asynchronous-filter',
+      },
+      {
+        title: 'Customize style',
+        hash: '#customize-style',
+      },
+      {
+        title: 'Customize style2',
+        hash: '#customize-style-2',
+      },
+      {
+        title: 'Customize message',
+        hash: '#customize-message',
+      },
+      {
+        title: 'Customize page\'s dropdown',
+        hash: '#customize-page-dropdown',
+      },
+      {
+        title: 'Catch row clicked',
+        hash: '#catch-row-clicked',
+      },
+      {
+        title: 'Fixed first column',
+        hash: '#fixed-first-column',
+      }
+    ]
+  }
+])
 </script>
 
 <style lang="postcss">

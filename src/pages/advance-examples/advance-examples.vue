@@ -34,6 +34,10 @@
         <h1 class="head">Catch Row clicked</h1>
         <CatchRow class="pt-3" />
       </div>
+      <div id="fixed-first-column">
+        <h1 class="head">Fixed First Column</h1>
+        <FixedFirstColumn class="pt-3" />
+      </div>
     </section>
   </section>
 </template>
@@ -47,6 +51,7 @@ import CustomStyle2 from "../../components/advance-examples/custom-style-2.vue";
 import CusMessage from "../../components/advance-examples/cus-message.vue";
 import CusPageDrop from "../../components/advance-examples/cus-page-drop.vue";
 import CatchRow from "../../components/advance-examples/catch-row.vue";
+import FixedFirstColumn from "../../components/advance-examples/fixed-first-column.vue";
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });
 };
