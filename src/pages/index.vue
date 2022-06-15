@@ -14,11 +14,7 @@
           </strong>
         </h1>
 
-        <p class="mt-4 sm:leading-relaxed sm:text-xl">
-          A simple and lightweight data table component for Vue.js 3. Features
-          sorting, paging, row check, dynamic data rendering, supported
-          TypeScript, and more.
-        </p>
+        <p class="mt-4 sm:leading-relaxed sm:text-xl">{{ i18n.$t('component_description') }}</p>
 
         <div class="flex flex-wrap justify-center gap-4 mt-8">
           <router-link
@@ -36,7 +32,20 @@
             Source Code
           </a>
         </div>
+        <div class="flex flex-wrap justify-center gap-4 mt-8 text-black">
+          <select v-model="i18n.locale.value">
+            <option value="en">English</option>
+            <option value="jp">日本語</option>
+            <option value="tw">繁體中文</option>
+            <option value="cn">简体中文</option>
+          </select>
+        </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { useI18n } from "../plugins/i18n";
+const i18n = useI18n();
+</script>

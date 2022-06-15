@@ -1,9 +1,9 @@
 <template>
     <section>
-        <Header title="Usage" />
+        <Header :title="i18n.$t('usage')" />
     </section>
     <section class="pt-20 px-3 pb-10">
-        <div>Vue 3 Table Lite is supported 3 rendering mode</div>
+        <div>{{ i18n.$t('usage_description') }}</div>
         <div v-for="(items, index) in usageList" :key="index">
             <h1 :id="items.id" class="head">{{ items.title }}</h1>
             <div class="pt-2">
@@ -35,17 +35,21 @@
     </section>
 </template>
 <script  setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import Header from "../../components/Header.vue";
+import { useI18n } from "../../plugins/i18n";
+const i18n = useI18n();
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });
 };
 scrollBehavior();
-let usageList = ref([
+let usageList = ref([]);
+const initUsageList = () => {
+  usageList.value = [
     {
-        title: "Default Mode",
+        title: i18n.$t('default_mode'),
         id:"defMode",
-        desc: "If you are always use API to get rows data. choose this mode.",
+        desc: i18n.$t('default_mode_description'),
         tempCode: `
 <table-lite
   :is-loading="table.isLoading"
@@ -145,9 +149,9 @@ let usageList = ref([
   },`,
     },
     {
-        title: "V-slot Mode",
+        title: i18n.$t('slot_mode'),
          id:"slotMode",
-        desc: "If you are use API to get rows data and need use vue components on rendering. choose this mode.",
+        desc: i18n.$t('slot_mode_description'),
         tempCode: `
     <table-lite
       :is-slot-mode="true"
@@ -252,9 +256,9 @@ let usageList = ref([
   },`,
     },
     {
-        title: "Static Mode",
+        title: i18n.$t('static_mode'),
          id:"staticMode",
-        desc: "If you are not use API to get rows data. choose this mode.",
+        desc: i18n.$t('static_mode_description'),
         tempCode: ` 
     <table-lite
       :is-static-mode="true"
@@ -315,7 +319,12 @@ let usageList = ref([
       };
   },`,
     },
-])
+  ];
+}
+watch(() => i18n.locale.value, () => {
+  initUsageList();
+});
+initUsageList();
 </script>
 <style >
 .head {

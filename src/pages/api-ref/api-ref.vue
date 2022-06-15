@@ -1,157 +1,154 @@
 <template>
   <section>
-    <Header title="API Reference" />
+    <Header :title="i18n.$t('api_reference')" />
   </section>
   <section class="pt-20 px-3 pb-10">
     <div id="props">
-      <h1 class="head">Props</h1>
+      <h1 class="head">{{ i18n.$t('props') }}</h1>
       <div class="pt-2">
         <ul class="list-square pl-5">
           <li class="mb-2 list-square">
             <b>title</b>
             <ul class="list-disc pl-10">
-              <li>Description: Table-title</li>
-              <li>Required: <span class="text-green">No</span></li>
-              <li>Type: <span class="text-green">String</span></li>
-              <li>Default: <span class="text-green">""</span></li>
+              <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_table_title_desc') }}</li>
+              <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">String</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">""</span></li>
             </ul>
           </li>
           <li class="mb-2 list-square">
             <b>is-slot-mode</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: If you want use v-slot (V-slot Mode), set TRUE.
+                {{ i18n.$t('description') }}: {{ i18n.$t('props_is_slot_mode_desc')}}
               </li>
-              <li>Required: <span class="text-green">No</span></li>
-              <li>Type: <span class="text-green">Boolean</span></li>
-              <li>Default: <span class="text-green">false</span></li>
+              <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
             </ul>
           </li>
           <li class="mb-2 list-square">
             <b>is-static-mode</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: If you not need use ajax or axios to get any data.
-                set TRUE.
+                {{ i18n.$t('description') }}: {{ i18n.$t('props_is_static_mode_desc')}}
               </li>
-              <li>Required: <span class="text-green">No</span></li>
-              <li>Type: <span class="text-green">Boolean</span></li>
-              <li>Default: <span class="text-green">false</span></li>
+              <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
             </ul>
           </li>
           <li class="mb-2 list-square">
             <b>has-checkbox</b>
             <ul class="list-disc pl-10">
-              <li>Description: Show checkbox on rows</li>
-              <li>Required: <span class="text-green">No</span></li>
-              <li>Type: <span class="text-green">Boolean</span></li>
-              <li>Default: <span class="text-green">false</span></li>
+              <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_has_checkbox_desc') }}</li>
+              <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
             </ul>
           </li>
           <li class="mb-2 list-square">
             <b>checked-return-type</b>
             <ul class="list-disc pl-10">
-              <li>Description: Return checked row data's type</li>
-              <li>Required: <span class="text-green">No</span></li>
-              <li>Type: <span class="text-green">String</span></li>
-              <li>Default: <span class="text-green">key</span></li>
-              <li>Values: <span class="text-green">key | row</span></li>
+              <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_checked_return_type_desc') }}</li>
+              <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">String</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">key</span></li>
+              <li>{{ i18n.$t('values') }}: <span class="text-green">key | row</span></li>
             </ul>
           </li>
           <li class="mb-2 list-square">
             <b>is-loading</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: Show loading modal (Not required on is-static-mode)
+                {{ i18n.$t('description') }}: {{ i18n.$t('props_is_loading_desc')}}
               </li>
-              <li>Required: <span class="text-green">No</span></li>
-              <li>Type: <span class="text-green">Boolean</span></li>
-              <li>Default: <span class="text-green">false</span></li>
+              <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
             </ul>
           </li>
           <li class="mb-2 list-square">
             <b>is-re-search</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: If reload data, be set true (Not required on
-                is-static-mode)
+                {{ i18n.$t('description') }}: {{ i18n.$t('props_is_re_search_desc')}}
               </li>
-              <li>Required: <span class="text-green">No</span></li>
-              <li>Type: <span class="text-green">Boolean</span></li>
-              <li>Default: <span class="text-green">false</span></li>
+              <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
             </ul>
           </li>
           <li class="mb-2 list-square">
             <b>columns</b>
             <ul class="list-disc pl-10">
-              <li>Description: The table columns</li>
-              <li>Required: <span class="text-danger">Yes</span></li>
-              <li>Type: <span class="text-green">Array</span></li>
-              <li>Default: <span class="text-green">null</span></li>
+              <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_desc') }}</li>
+              <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">Array</span></li>
+              <li>{{ i18n.$t('default') }}: <span class="text-green">null</span></li>
               <ul class="list-disc pl-10">
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>isKey</b>
-                    <li>Description: If field is primary key. set to true</li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">Boolean</span></li>
-                    <li>Default: <span class="text-green">false</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_isKey_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+                    <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
                   </ul>
                 </li>
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>label</b>
-                    <li>Description: Field lable for display</li>
-                    <li>Required: <span class="text-danger">Yes</span></li>
-                    <li>Type: <span class="text-green">string</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_label_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                   </ul>
                 </li>
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>field</b>
-                    <li>Description: Row field keyname</li>
-                    <li>Required: <span class="text-danger">Yes</span></li>
-                    <li>Type: <span class="text-green">string</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_field_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                   </ul>
                 </li>
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>width</b>
-                    <li>Description: Field's width size</li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">string</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_width_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                   </ul>
                 </li>
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>sortable</b>
-                    <li>Description: If the field can sorting. set to true</li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">Boolean</span></li>
-                    <li>Default: <span class="text-green">false</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_sortable_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+                    <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
                   </ul>
                 </li>
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>display</b>
                     <li>
-                      Description: You can customize display data in there.
-                      (html tag or Etc.)
+                      {{ i18n.$t('description') }}: {{ i18n.$t('props_columns_display_desc')}}
                     </li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">Function</span></li>
-                    <li>Default: <span class="text-green">null</span></li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">Function</span></li>
+                    <li>{{ i18n.$t('default') }}: <span class="text-green">null</span></li>
                   </ul>
                 </li>
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>headerClasses</b>
-                    <li>Description: Data header's classes array</li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">Array</span></li>
-                    <li>Default: <span class="text-green">null</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_headerClasses_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">Array</span></li>
+                    <li>{{ i18n.$t('default') }}: <span class="text-green">null</span></li>
                     <li>
-                      Example:
+                      {{ i18n.$t('example') }}:
                       <span class="text-green">["bg-gray", "color-red"]</span>
                     </li>
                   </ul>
@@ -159,12 +156,12 @@
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>columnClasses</b>
-                    <li>Description: Data column's classes array</li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">Array</span></li>
-                    <li>Default: <span class="text-green">null</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_columnClasses_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">Array</span></li>
+                    <li>{{ i18n.$t('default') }}: <span class="text-green">null</span></li>
                     <li>
-                      Example:
+                      {{ i18n.$t('example') }}:
                       <span class="text-green">["bg-gray", "color-red"]</span>
                     </li>
                   </ul>
@@ -172,12 +169,12 @@
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>headerStyles</b>
-                    <li>Description: Data header's in-line style object</li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">Object</span></li>
-                    <li>Default: <span class="text-green">null</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_headerStyles_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">Object</span></li>
+                    <li>{{ i18n.$t('default') }}: <span class="text-green">null</span></li>
                     <li>
-                      Example:
+                      {{ i18n.$t('example') }}:
                       <span class="text-green"
                         >{"background": "gray", "color": "red"}</span
                       >
@@ -187,12 +184,12 @@
                 <li class="mb-2 list-square">
                   <ul class="list-disc pl-10">
                     <b>columnStyles</b>
-                    <li>Description: Data column's in-line style object</li>
-                    <li>Required: <span class="text-green">No</span></li>
-                    <li>Type: <span class="text-green">Object</span></li>
-                    <li>Default: <span class="text-green">null</span></li>
+                    <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_columns_columnStyles_desc') }}</li>
+                    <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                    <li>{{ i18n.$t('type') }}: <span class="text-green">Object</span></li>
+                    <li>{{ i18n.$t('default') }}: <span class="text-green">null</span></li>
                     <li>
-                      Example:
+                      {{ i18n.$t('example') }}:
                       <span class="text-green"
                         >{"background": "gray", "color": "red"}</span
                       >
@@ -206,19 +203,19 @@
         <li class="mb-2 list-square">
           <b>rows</b>
           <ul class="list-disc pl-10">
-            <li>Description: Records</li>
-            <li>Required: <span class="text-danger">Yes</span></li>
-            <li>Type: <span class="text-green">Array</span></li>
+            <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_rows_desc') }}</li>
+            <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Array</span></li>
           </ul>
         </li>
         <li class="mb-2 list-square">
           <b>rowClasses</b>
           <ul class="list-disc pl-10">
-            <li>Description: &lt;tr&gt; tag's classes</li>
-            <li>Required: <span class="text-danger">No</span></li>
-            <li>Type: <span class="text-green">Array | Function</span></li>
+            <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_rowClasses_desc') }}</li>
+            <li>{{ i18n.$t('required') }}: <span class="text-danger">No</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Array | Function</span></li>
             <li>
-              Example:
+              {{ i18n.$t('example') }}:
               <span class="text-green"
                 >["a", "b"] | (row) =&gt; { return (row.name === "tony) ?
                 ['member'] : [] }</span
@@ -229,32 +226,32 @@
         <li class="mb-2 list-square">
           <b>total</b>
           <ul class="list-disc pl-10">
-            <li>Description: Records count</li>
-            <li>Required: <span class="text-danger">Yes</span></li>
-            <li>Type: <span class="text-green">Number</span></li>
+            <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_total_desc') }}</li>
+            <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
           </ul>
         </li>
         <li class="mb-2 list-square">
           <b>sortable</b>
           <ul class="list-disc pl-10">
-            <li>Description: Order field and sort for Sortable</li>
-            <li>Required: <span class="text-danger">Yes</span></li>
-            <li>Type: <span class="text-green">Object</span></li>
+            <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_sortable_desc') }}</li>
+            <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Object</span></li>
             <ul class="list-disc pl-10">
               <li class="mb-2 list-square">
                 <ul class="list-disc pl-10">
                   <b>order</b>
-                  <li>Description: Field key</li>
-                  <li>Required: <span class="text-danger">Yes</span></li>
-                  <li>Type: <span class="text-green">string</span></li>
+                  <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_sortable_order_desc') }}</li>
+                  <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                  <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                 </ul>
               </li>
               <li class="mb-2 list-square">
                 <ul class="list-disc pl-10">
                   <b>sort</b>
-                  <li>Description: "asc" or "desc"</li>
-                  <li>Required: <span class="text-danger">Yes</span></li>
-                  <li>Type: <span class="text-green">string</span></li>
+                  <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_sortable_sort_desc') }}</li>
+                  <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                  <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                 </ul>
               </li>
             </ul>
@@ -263,17 +260,18 @@
         <li class="mb-2 list-square">
           <b>messages</b>
           <ul class="list-disc pl-10">
-            <li>Description: Messages</li>
-            <li>Required: <span class="text-green">No</span></li>
-            <li>Type: <span class="text-green">Object</span></li>
+            <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_messages_desc') }}</li>
+            <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Object</span></li>
             <ul class="list-disc pl-10">
               <li class="mb-2 list-square">
                 <ul class="list-disc pl-10">
                   <b>pagingInfo</b>
-                  <li>Required: <span class="text-green">No</span></li>
-                  <li>Type: <span class="text-green">string</span></li>
+                  <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_messages_pagingInfo_desc') }}</li>
+                  <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                  <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                   <li>
-                    Default:
+                    {{ i18n.$t('default') }}:
                     <span class="text-green">"Showing {0}-{1} of {2}"</span>
                   </li>
                 </ul>
@@ -281,27 +279,30 @@
               <li class="mb-2 list-square">
                 <ul class="list-disc pl-10">
                   <b>pageSizeChangeLabel</b>
-                  <li>Required: <span class="text-green">No</span></li>
-                  <li>Type: <span class="text-green">string</span></li>
-                  <li>Default: <span class="text-green">"Row count:"</span></li>
+                  <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_messages_pageSizeChangeLabel_desc') }}</li>
+                  <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                  <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
+                  <li>{{ i18n.$t('default') }}: <span class="text-green">"Row count:"</span></li>
                 </ul>
               </li>
               <li class="mb-2 list-square">
                 <ul class="list-disc pl-10">
                   <b>gotoPageLabel</b>
-                  <li>Required: <span class="text-green">No</span></li>
-                  <li>Type: <span class="text-green">string</span></li>
+                  <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_messages_gotoPageLabel_desc') }}</li>
+                  <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                  <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                   <li>
-                    Default: <span class="text-green">"Go to page:"</span>
+                    {{ i18n.$t('default') }}: <span class="text-green">"Go to page:"</span>
                   </li>
                 </ul>
               </li>
               <li class="mb-2 list-square">
                 <ul class="list-disc pl-10">
                   <b>noDataAvailable</b>
-                  <li>Required: <span class="text-green">No</span></li>
-                  <li>Type: <span class="text-green">string</span></li>
-                  <li>Default: <span class="text-green">"No data"</span></li>
+                  <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_messages_noDataAvailable_desc') }}</li>
+                  <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                  <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
+                  <li>{{ i18n.$t('default') }}: <span class="text-green">"No data"</span></li>
                 </ul>
               </li>
             </ul>
@@ -310,63 +311,61 @@
         <li class="mb-2 list-square">
           <b>is-hide-paging</b>
           <ul class="list-disc pl-10">
-            <li>Description: No Show paging infomation on bottom</li>
-            <li>Required: <span class="text-green">No</span></li>
-            <li>Type: <span class="text-green">Boolean</span></li>
-            <li>Default: <span class="text-green">false</span></li>
+            <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_is_hide_paging_desc') }}</li>
+            <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Boolean</span></li>
+            <li>{{ i18n.$t('default') }}: <span class="text-green">false</span></li>
           </ul>
         </li>
         <li class="mb-2 list-square">
           <b>page</b>
           <ul class="list-disc pl-10">
             <li>
-              Description: If you want to control page no yourself, use it can
-              will be to change page no.
+              {{ i18n.$t('description') }}: {{ i18n.$t('props_page_desc') }}
             </li>
-            <li>Required: <span class="text-green">No</span></li>
-            <li>Type: <span class="text-green">Number</span></li>
-            <li>Default: <span class="text-green">1</span></li>
+            <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
+            <li>{{ i18n.$t('default') }}: <span class="text-green">1</span></li>
           </ul>
         </li>
         <li class="mb-2 list-square">
           <b>page-size</b>
           <ul class="list-disc pl-10">
             <li>
-              Description: Default display the number of items on one page.
-              <span class="text-red-500">In most cases no set required.</span>
+              {{ i18n.$t('description') }}: <span v-html="i18n.$t('props_page_size_desc')"></span>
             </li>
-            <li>Required: <span class="text-green">No</span></li>
-            <li>Type: <span class="text-green">Number</span></li>
-            <li>Default: <span class="text-green">10</span></li>
+            <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
+            <li>{{ i18n.$t('default') }}: <span class="text-green">10</span></li>
           </ul>
         </li>
         <li class="mb-2 list-square">
           <b>pageOptions</b>
           <ul class="list-disc pl-10">
-            <li>Description: Pages dropdown list</li>
-            <li>Required: <span class="text-green">No</span></li>
-            <li>Type: <span class="text-green">Array</span></li>
+            <li>{{ i18n.$t('description') }}: {{ i18n.$t('props_page_options_desc') }}</li>
+            <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+            <li>{{ i18n.$t('type') }}: <span class="text-green">Array</span></li>
             <ul class="list-disc pl-10">
               <li class="mb-2 list-square">
                 <ul class="list-disc pl-10">
-                  <li>Required: <span class="text-green">Yes</span></li>
-                  <li>Type: <span class="text-green">Object</span></li>
+                  <li>{{ i18n.$t('required') }}: <span class="text-green">Yes</span></li>
+                  <li>{{ i18n.$t('type') }}: <span class="text-green">Object</span></li>
                   <li>
                     <ul class="list-disc pl-10">
                       <b>value</b>
-                      <li>Required: <span class="text-green">Yes</span></li>
-                      <li>Type: <span class="text-green">Number</span></li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-green">Yes</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
                     </ul>
                     <ul class="list-disc pl-10">
                       <b>text</b>
-                      <li>Required: <span class="text-green">Yes</span></li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-green">Yes</span></li>
                       <li>
-                        Type: <span class="text-green">Number | string</span>
+                        {{ i18n.$t('type') }}: <span class="text-green">Number | string</span>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    Default:[ { value: 10, text: 10 }, { value: 25, text: 25 },
+                    {{ i18n.$t('default') }}:[ { value: 10, text: 10 }, { value: 25, text: 25 },
                     { value: 50, text: 50 } ]
                   </li>
                 </ul>
@@ -377,26 +376,20 @@
       </div>
     </div>
     <div id="events">
-      <h1 class="head">Events</h1>
+      <h1 class="head">{{ i18n.$t('events') }}</h1>
       <div class="pt-2">
         <ul class="list-square pl-5">
           <li class="mb-2">
             <b>do-search</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: Your search event.
-                <span class="text-red-500"
-                  >It's will be auto trigger after data sort and paging.</span
-                >
+                {{ i18n.$t('description') }}: <span v-html="i18n.$t('events_do_search_desc')"></span>
               </li>
               <li>
-                Hint:
-                <span class="text-red-500"
-                  >In static-mode no set required.</span
-                >
+                {{ i18n.$t('hint') }}: <span class="text-red-500">{{ i18n.$t('events_do_search_hint') }}</span>
               </li>
               <li>
-                Type:
+                {{ i18n.$t('type') }}:
                 <span class="text-green"
                   >(offset, limit, order, sort) =&gt; void</span
                 >
@@ -407,33 +400,33 @@
                   <li>
                     <ul class="list-disc pl-10">
                       <b>offset</b>
-                      <li>Description: Offset value for database.</li>
-                      <li>Required: <span class="text-danger">Yes</span></li>
-                      <li>Type: <span class="text-green">Number</span></li>
+                      <li>{{ i18n.$t('description') }}: {{ i18n.$t('events_do_search_offset_desc') }}</li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
                     </ul>
                   </li>
                   <li>
                     <ul class="list-disc pl-10">
                       <b>limit</b>
-                      <li>Description: limit value for database.</li>
-                      <li>Required: <span class="text-danger">Yes</span></li>
-                      <li>Type: <span class="text-green">Number</span></li>
+                      <li>{{ i18n.$t('description') }}: {{ i18n.$t('events_do_search_limit_desc') }}</li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
                     </ul>
                   </li>
                   <li>
                     <ul class="list-disc pl-10">
                       <b>order</b>
-                      <li>Description: Sortable value for database.</li>
-                      <li>Required: <span class="text-danger">Yes</span></li>
-                      <li>Type: <span class="text-green">string</span></li>
+                      <li>{{ i18n.$t('description') }}: {{ i18n.$t('events_do_search_order_desc') }}</li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                     </ul>
                   </li>
                   <li>
                     <ul class="list-disc pl-10">
                       <b>sort</b>
-                      <li>Description: Sortable value for database.</li>
-                      <li>Required: <span class="text-danger">Yes</span></li>
-                      <li>Type: <span class="text-green">string</span></li>
+                      <li>{{ i18n.$t('description') }}: {{ i18n.$t('events_do_search_sort_desc') }}</li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-danger">Yes</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">string</span></li>
                     </ul>
                   </li>
                 </ul>
@@ -444,11 +437,10 @@
             <b>is-finished</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: Will be trigger this function after table rendering
-                finished.
+                {{ i18n.$t('description') }}: {{ i18n.$t('events_is_finished_desc') }}
               </li>
               <li>
-                Type: <span class="text-green">(elements) =&gt; void</span>
+                {{ i18n.$t('type') }}: <span class="text-green">(elements) =&gt; void</span>
               </li>
               <li>
                 Arguments:
@@ -457,11 +449,10 @@
                     <ul class="list-disc pl-10">
                       <b>elements</b>
                       <li>
-                        Description: Pass by has 「is-rows-el」 class name's
-                        elements.
+                        {{ i18n.$t('description') }}: {{ i18n.$t('events_is_finished_elements_desc') }}
                       </li>
-                      <li>Required: <span class="text-green">No</span></li>
-                      <li>Type: <span class="text-green">Array</span></li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">Array</span></li>
                     </ul>
                   </li>
                 </ul>
@@ -472,11 +463,10 @@
             <b>return-checked-rows</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: Will be call this function after table checkbox on
-                checked.
+                {{ i18n.$t('description') }}: {{ i18n.$t('events_return_checked_rows_desc') }}
               </li>
               <li>
-                Type: <span class="text-green">(rowsKey) =&gt; void</span>
+                {{ i18n.$t('type') }}: <span class="text-green">(rowsKey) =&gt; void</span>
               </li>
               <li>
                 Arguments:
@@ -485,10 +475,10 @@
                     <ul class="list-disc pl-10">
                       <b>rowsKey</b>
                       <li>
-                        Description: Pass by checked row's key field name.
+                        {{ i18n.$t('description') }}: {{ i18n.$t('events_return_checked_rows_rowsKey_desc') }}
                       </li>
-                      <li>Required: <span class="text-green">No</span></li>
-                      <li>Type: <span class="text-green">Number</span></li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
                     </ul>
                   </li>
                 </ul>
@@ -498,17 +488,17 @@
           <li class="mb-2">
             <b>get-now-page</b>
             <ul class="list-disc pl-10">
-              <li>Description: You can get now page no from this function.</li>
-              <li>Type: <span class="text-green">(pageNo) =&gt; void</span></li>
+              <li>{{ i18n.$t('description') }}: {{ i18n.$t('events_get_now_page_desc') }}</li>
+              <li>{{ i18n.$t('type') }}: <span class="text-green">(pageNo) =&gt; void</span></li>
               <li>
                 Arguments:
                 <ul class="list-square pl-10">
                   <li>
                     <ul class="list-disc pl-10">
                       <b>pageNo</b>
-                      <li>Description: Pass by page no.</li>
-                      <li>Required: <span class="text-green">No</span></li>
-                      <li>Type: <span class="text-green">Number</span></li>
+                      <li>{{ i18n.$t('description') }}: {{ i18n.$t('events_get_now_page_pageNo_desc') }}</li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">Number</span></li>
                     </ul>
                   </li>
                 </ul>
@@ -519,11 +509,10 @@
             <b>row-clicked</b>
             <ul class="list-disc pl-10">
               <li>
-                Description: You can get row data from this function after row
-                clicked.
+                {{ i18n.$t('description') }}: {{ i18n.$t('events_row_clicked_desc') }}
               </li>
               <li>
-                Type: <span class="text-green">(rowData) =&gt; void</span>
+                {{ i18n.$t('type') }}: <span class="text-green">(rowData) =&gt; void</span>
               </li>
               <li>
                 Arguments:
@@ -531,9 +520,9 @@
                   <li>
                     <ul class="list-disc pl-10">
                       <b>rowData</b>
-                      <li>Description: Pass by row data.</li>
-                      <li>Required: <span class="text-green">No</span></li>
-                      <li>Type: <span class="text-green">Object</span></li>
+                      <li>{{ i18n.$t('description') }}: {{ i18n.$t('events_row_clicked_rowData_desc') }}</li>
+                      <li>{{ i18n.$t('required') }}: <span class="text-green">No</span></li>
+                      <li>{{ i18n.$t('type') }}: <span class="text-green">Object</span></li>
                     </ul>
                   </li>
                 </ul>
@@ -544,24 +533,19 @@
       </div>
     </div>
     <div id="slots">
-      <h1 class="head">Slots</h1>
-      <h1 class="text-base py-2">
-        This is option. But, If you enabled V-slot mode, You should be to write
-        it.
-      </h1>
+      <h1 class="head">{{ i18n.$t('slots') }}</h1>
+      <h1 class="text-base py-2">{{ i18n.$t('slots_description') }}</h1>
       <div>
         <ul class="pl-5 list-square">
           <li>
-            <b>Field's name</b>
+            <b>{{ i18n.$t('slots_field_name') }}</b>
             <ul class="pl-10 list-disc">
               <li>
-                Description:
-                <span class="text-green">Show Row data's scope</span>
+                {{ i18n.$t('description') }}:
+                <span class="text-green">{{ i18n.$t('slots_field_name_desc') }}</span>
               </li>
               <li>
-                <h1 class="text-sm font-semibold py-2">
-                  Usage (Custom every one)
-                </h1>
+                <h1 class="text-sm font-semibold py-2">{{ i18n.$t('slots_field_name_usage1') }}</h1>
                 <div
                   v-highlight
                   class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto"
@@ -572,7 +556,7 @@
                  </code>
              </pre>
                 </div>
-                <h1 class="text-sm font-semibold py-2">Usage (All to same)</h1>
+                <h1 class="text-sm font-semibold py-2">{{ i18n.$t('slots_field_name_usage2') }}</h1>
                 <div
                   v-highlight
                   class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto"
@@ -592,20 +576,13 @@
   </section>
 </template>
 <script setup>
-import { ref } from "vue";
 import Header from "../../components/Header.vue";
+import { useI18n } from "../../plugins/i18n";
+const i18n = useI18n();
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });
 };
 scrollBehavior();
-let usageList = ref([
-  {
-    title: "Props",
-  },
-  {
-    title: "Events",
-  },
-]);
 let codeBlock = `
 <template v-slot:id="data">
   <YourComponent>{{ data.value.id }}</YourComponent>

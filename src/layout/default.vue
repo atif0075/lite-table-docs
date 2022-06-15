@@ -18,24 +18,32 @@
       </div>
 
       <div>
-        <ul v-for="(menu, i) in menus" :key="i" class="p-2" :class="{'pt-20': i ==0 }">
+        <div class="pt-20">
+          <select class="ml-5" v-model="i18n.locale.value">
+            <option value="en">English</option>
+            <option value="jp">日本語</option>
+            <option value="tw">繁體中文</option>
+            <option value="cn">简体中文</option>
+          </select>
+        </div>
+        <ul v-for="(mainMenu, i) in menu" :key="i" class="p-2">
           <li>
-            <router-link :to="menu.url" type="button" class="ulBtn">
+            <router-link :to="mainMenu.url" type="button" class="ulBtn">
               <span
                 class="flex-1 text-left whitespace-nowrap"
                 sidebar-toggle-item
-                >{{ menu.title }}</span
+                >{{ mainMenu.title }}</span
               >
             </router-link>
             <ul class="py-2 space-y-2 capitalize">
-              <template v-for="(submenu, j) in menu.submenu" :key="j">
+              <template v-for="(submenu, j) in mainMenu.submenu" :key="j">
                 <router-link
-                  :to="menu.url + submenu.hash"
+                  :to="mainMenu.url + submenu.hash"
                   custom
                   v-slot="{ href, navigate }"
                 >
                   <li class="list-item">
-                    <a :href="href" @click="navigate">{{ submenu.title}}</a>
+                    <a :href="href" @click="(e) => { toggle = (scWidth < 1024); return navigate(e) }">{{ submenu.title }}</a>
                   </li>
                 </router-link>
               </template>
@@ -71,8 +79,15 @@
   </section>
 </template>
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
+import { useI18n } from "../plugins/i18n";
+
 let toggle = ref(false);
+const i18n = useI18n();
+
+watch(() => i18n.locale.value, () => {
+  initMenu();
+})
 
 onMounted(() => {
   onresize();
@@ -95,122 +110,127 @@ let clickAway = () => {
   }
 };
 
-const menus = ref([
-  {
-    title: 'Quick start',
-    url: '/quick-start',
-    submenu: [
-      {
-        title: 'Install',
-        hash: '#install',
-      },
-      {
-        title: 'Include',
-        hash: '#include',
-      },
-      {
-        title: 'TypeScript',
-        hash: '#typescript',
-      }
-    ]
-  },
-  {
-    title: 'Usage',
-    url: '/usage',
-    submenu: [
-      {
-        title: 'Default mode',
-        hash: '#defMode',
-      },
-      {
-        title: 'V-slot mode',
-        hash: '#slotMode',
-      },
-      {
-        title: 'Static mode',
-        hash: '#staticMode',
-      }
-    ]
-  },
-  {
-    title: 'Api reference',
-    url: '/api-reference',
-    submenu: [
-      {
-        title: 'Props',
-        hash: '#props',
-      },
-      {
-        title: 'Events',
-        hash: '#events',
-      },
-      {
-        title: 'Slots',
-        hash: '#slots',
-      }
-    ]
-  },
-  {
-    title: 'Simple Examples',
-    url: '/simple-examples',
-    submenu: [
-      {
-        title: 'Default mode',
-        hash: '#defMode',
-      },
-      {
-        title: 'V-slot mode',
-        hash: '#slotMode',
-      },
-      {
-        title: 'Static mode',
-        hash: '#staticMode',
-      }
-    ]
-  },
-  {
-    title: 'Advance examples',
-    url: '/advance-examples',
-    submenu: [
-      {
-        title: 'Customize display data',
-        hash: '#customize-display-data',
-      },
-      {
-        title: 'Filter',
-        hash: '#filter',
-      },
-      {
-        title: 'Asynchronous filter',
-        hash: '#asynchronous-filter',
-      },
-      {
-        title: 'Customize style',
-        hash: '#customize-style',
-      },
-      {
-        title: 'Customize style2',
-        hash: '#customize-style-2',
-      },
-      {
-        title: 'Customize message',
-        hash: '#customize-message',
-      },
-      {
-        title: 'Customize page\'s dropdown',
-        hash: '#customize-page-dropdown',
-      },
-      {
-        title: 'Catch row clicked',
-        hash: '#catch-row-clicked',
-      },
-      {
-        title: 'Fixed first column',
-        hash: '#fixed-first-column',
-      }
-    ]
-  }
-])
+const menu = ref([]);
+const initMenu = () => {
+  menu.value = [
+    {
+      title: i18n.$t('quick_start'),
+      url: '/quick-start',
+      submenu: [
+        {
+          title: i18n.$t('install'),
+          hash: '#install',
+        },
+        {
+          title: i18n.$t('include'),
+          hash: '#include',
+        },
+        {
+          title: 'TypeScript',
+          hash: '#typescript',
+        }
+      ]
+    },
+    {
+      title: i18n.$t('usage'),
+      url: '/usage',
+      submenu: [
+        {
+          title: i18n.$t('default_mode'),
+          hash: '#defMode',
+        },
+        {
+          title: i18n.$t('slot_mode'),
+          hash: '#slotMode',
+        },
+        {
+          title: i18n.$t('static_mode'),
+          hash: '#staticMode',
+        }
+      ]
+    },
+    {
+      title: i18n.$t('api_reference'),
+      url: '/api-reference',
+      submenu: [
+        {
+          title: i18n.$t('props'),
+          hash: '#props',
+        },
+        {
+          title: i18n.$t('events'),
+          hash: '#events',
+        },
+        {
+          title: i18n.$t('slots'),
+          hash: '#slots',
+        }
+      ]
+    },
+    {
+      title: i18n.$t('simple_examples'),
+      url: '/simple-examples',
+      submenu: [
+        {
+          title: i18n.$t('default_mode'),
+          hash: '#defMode',
+        },
+        {
+          title: i18n.$t('slot_mode'),
+          hash: '#slotMode',
+        },
+        {
+          title: i18n.$t('static_mode'),
+          hash: '#staticMode',
+        }
+      ]
+    },
+    {
+      title: i18n.$t('advance_examples'),
+      url: '/advance-examples',
+      submenu: [
+        {
+          title: i18n.$t('customize_display_data'),
+          hash: '#customize-display-data',
+        },
+        {
+          title: i18n.$t('filter'),
+          hash: '#filter',
+        },
+        {
+          title: i18n.$t('asynchronous_filter'),
+          hash: '#asynchronous-filter',
+        },
+        {
+          title: i18n.$t('customize_style'),
+          hash: '#customize-style',
+        },
+        {
+          title: i18n.$t('customize_style_2'),
+          hash: '#customize-style-2',
+        },
+        {
+          title: i18n.$t('customize_message'),
+          hash: '#customize-message',
+        },
+        {
+          title: i18n.$t('customize_page_dropdown'),
+          hash: '#customize-page-dropdown',
+        },
+        {
+          title: i18n.$t('catch_row_clicked'),
+          hash: '#catch-row-clicked',
+        },
+        {
+          title: i18n.$t('fixed_first_column'),
+          hash: '#fixed-first-column',
+        }
+      ]
+    }
+  ];
+}
+initMenu();
+
 </script>
 
 <style lang="postcss">
