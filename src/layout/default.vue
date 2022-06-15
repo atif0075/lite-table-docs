@@ -18,13 +18,64 @@
       </div>
 
       <div>
-        <div class="pt-20">
-          <select class="ml-5" v-model="i18n.locale.value">
-            <option value="en">English</option>
-            <option value="jp">日本語</option>
-            <option value="tw">繁體中文</option>
-            <option value="cn">简体中文</option>
-          </select>
+        <div class="pt-20 px-4">
+          <main class="flex justify-end">
+            <div class="relative inline-block text-left">
+              <div>
+                <button
+                  @click="showLanguageSelector = !showLanguageSelector"
+                  type="button"
+                  class="inline-flex justify-center w-full rounded-md border border-dark shadow-sm px-4 py-2 bg-light-dark text-white text-sm font-medium focus:outline-none"
+                >
+                  {{ currentLangName }}
+                  <svg
+                    class="-mr-1 ml-2 h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                v-if="showLanguageSelector"
+                class="origin-top-right absolute right-0 mt-2 w-56 text-white rounded-md shadow-lg bg-light-dark focus:outline-none"
+              >
+                <div class="py-1 cursor-pointer">
+                  <div
+                    @click="changeLang('en', 'English')"
+                    class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                  >
+                    English
+                  </div>
+                  <div
+                    @click="changeLang('jp', '日本語')"
+                    class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                  >
+                    日本語
+                  </div>
+                  <div
+                    @click="changeLang('tw', '繁體中文')"
+                    class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                  >
+                    繁體中文
+                  </div>
+                  <div
+                    @click="changeLang('cn', '简体中文')"
+                    class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                  >
+                    简体中文
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
         </div>
         <ul v-for="(mainMenu, i) in menu" :key="i" class="p-2">
           <li>
@@ -89,8 +140,26 @@ watch(() => i18n.locale.value, () => {
   initMenu();
 })
 
+
+let showLanguageSelector = ref(false);
+let currentLangName = ref(i18n.locale.value);
+let changeLang = (lang, name) => {
+  i18n.locale.value = lang;
+  currentLangName.value = name;
+  showLanguageSelector.value = false;
+};
+
 onMounted(() => {
   onresize();
+   if (i18n.locale.value === "en") {
+    currentLangName.value = "English";
+  } else if (i18n.locale.value === "jp") {
+    currentLangName.value = "日本語";
+  } else if (i18n.locale.value === "tw") {
+    currentLangName.value = "繁體中文";
+  } else if (i18n.locale.value === "cn") {
+    currentLangName.value = "简体中文";
+  }
 });
 let scWidth = ref();
 let onresize = () => {
