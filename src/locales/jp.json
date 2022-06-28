@@ -82,10 +82,12 @@
     "customize_display_data": "表示内容のカスタマイズ",
     "filter": "内容検索（同期）",
     "asynchronous_filter": "内容検索（非同期）",
+    "filter_in_table": "コラム検索",
     "customize_style": "スタイルのカスタマイズ",
     "customize_style_2": "スタイルのカスタマイズ2",
     "customize_message": "表示文言のカスタマイズ",
     "customize_page_dropdown": "表示件数のカスタマイズ",
     "catch_row_clicked": "クリックした行データを取得",
-    "fixed_first_column": "先頭の列を固定する（横スクロール時）"
+    "fixed_first_column": "先頭の列を固定する（横スクロール時）",
+    "show_controls": "機能ボタンのカスタマイズ"
 }

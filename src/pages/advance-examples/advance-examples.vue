@@ -14,6 +14,10 @@
         <h1 class="head">{{ i18n.$t("asynchronous_filter") }}</h1>
         <AsyncFilter class="pt-3" />
       </div>
+      <div id="filter-in-table">
+        <h1 class="head">{{ i18n.$t("filter_in_table") }}</h1>
+        <FilterInTable class="pt-3" />
+      </div>
       <div id="customize-style">
         <h1 class="head">{{ i18n.$t("customize_style") }}</h1>
         <CustomStyle class="pt-3" />
@@ -39,7 +43,7 @@
         <FixedFirstColumn class="pt-3" />
       </div>
       <div id="show-controls">
-        <h1 class="head">Show Controlls</h1>
+        <h1 class="head">{{ i18n.$t("show_controls") }}</h1>
         <ShowControls class="pt-3" />
       </div>
     </section>
@@ -58,6 +62,7 @@ import CatchRow from "../../components/advance-examples/catch-row.vue";
 import FixedFirstColumn from "../../components/advance-examples/fixed-first-column.vue";
 import { useI18n } from "../../plugins/i18n";
 import ShowControls from "../../components/advance-examples/show-controls.vue";
+import FilterInTable from "../../components/advance-examples/filter-in-table.vue";
 const i18n = useI18n();
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });
