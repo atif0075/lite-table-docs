@@ -200,11 +200,9 @@ let deleteCurrentRow = (row) => {
 }
 
 ::v-deep(.vtl-paging) {
-  display: none;
+  color: black;
 }
-::v-deep(.vtl-paging .vtl-row) {
-  display: none;
-}
+
 ::v-deep(.vtl-both) {
   @apply text-[10px] sm:text-xs !important;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAA6UlEQVQ4jc2SvWoCQRSFv3tjaWMRUmQ7f0gCFik0kC6g5jl8D5Vh43vkPcTGJhiwCyi4MTZ2giHB1hkrYbPZEa30K8+cuXPOZeC8iUxAZIJ9FvWeTF9uER0iOmIWlo8bEIX3qBsA18AVjgFf3ephA2ZhBegDlzE1h7U9PruPSbv8fdncIfoOZD2J1zj7QNGMd0ImYVjgpAlWSEUdsNhf4UiSCQLEvYJ4Krg19qIK/KYnKJoxok84Vim3f0CfKbUncfF/hXxrBNSAZUz9RrVBofWWtHuWBczNDRvtAxmEOvnOh9fr5YCvfHq2lRE65U8seIkAAAAASUVORK5CYII=);
