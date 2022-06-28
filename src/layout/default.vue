@@ -94,7 +94,16 @@
                   v-slot="{ href, navigate }"
                 >
                   <li class="list-item">
-                    <a :href="href" @click="(e) => { toggle = (scWidth < 1024); return navigate(e) }">{{ submenu.title }}</a>
+                    <a
+                      :href="href"
+                      @click="
+                        (e) => {
+                          toggle = scWidth < 1024;
+                          return navigate(e);
+                        }
+                      "
+                      >{{ submenu.title }}</a
+                    >
                   </li>
                 </router-link>
               </template>
@@ -136,10 +145,12 @@ import { useI18n } from "../plugins/i18n";
 let toggle = ref(false);
 const i18n = useI18n();
 
-watch(() => i18n.locale.value, () => {
-  initMenu();
-})
-
+watch(
+  () => i18n.locale.value,
+  () => {
+    initMenu();
+  }
+);
 
 let showLanguageSelector = ref(false);
 let currentLangName = ref(i18n.locale.value);
@@ -151,7 +162,7 @@ let changeLang = (lang, name) => {
 
 onMounted(() => {
   onresize();
-   if (i18n.locale.value === "en") {
+  if (i18n.locale.value === "en") {
     currentLangName.value = "English";
   } else if (i18n.locale.value === "jp") {
     currentLangName.value = "日本語";
@@ -183,123 +194,126 @@ const menu = ref([]);
 const initMenu = () => {
   menu.value = [
     {
-      title: i18n.$t('quick_start'),
-      url: '/quick-start',
+      title: i18n.$t("quick_start"),
+      url: "/quick-start",
       submenu: [
         {
-          title: i18n.$t('install'),
-          hash: '#install',
+          title: i18n.$t("install"),
+          hash: "#install",
         },
         {
-          title: i18n.$t('include'),
-          hash: '#include',
+          title: i18n.$t("include"),
+          hash: "#include",
         },
         {
-          title: 'TypeScript',
-          hash: '#typescript',
-        }
-      ]
+          title: "TypeScript",
+          hash: "#typescript",
+        },
+      ],
     },
     {
-      title: i18n.$t('usage'),
-      url: '/usage',
+      title: i18n.$t("usage"),
+      url: "/usage",
       submenu: [
         {
-          title: i18n.$t('default_mode'),
-          hash: '#defMode',
+          title: i18n.$t("default_mode"),
+          hash: "#defMode",
         },
         {
-          title: i18n.$t('slot_mode'),
-          hash: '#slotMode',
+          title: i18n.$t("slot_mode"),
+          hash: "#slotMode",
         },
         {
-          title: i18n.$t('static_mode'),
-          hash: '#staticMode',
-        }
-      ]
+          title: i18n.$t("static_mode"),
+          hash: "#staticMode",
+        },
+      ],
     },
     {
-      title: i18n.$t('api_reference'),
-      url: '/api-reference',
+      title: i18n.$t("api_reference"),
+      url: "/api-reference",
       submenu: [
         {
-          title: i18n.$t('props'),
-          hash: '#props',
+          title: i18n.$t("props"),
+          hash: "#props",
         },
         {
-          title: i18n.$t('events'),
-          hash: '#events',
+          title: i18n.$t("events"),
+          hash: "#events",
         },
         {
-          title: i18n.$t('slots'),
-          hash: '#slots',
-        }
-      ]
+          title: i18n.$t("slots"),
+          hash: "#slots",
+        },
+      ],
     },
     {
-      title: i18n.$t('simple_examples'),
-      url: '/simple-examples',
+      title: i18n.$t("simple_examples"),
+      url: "/simple-examples",
       submenu: [
         {
-          title: i18n.$t('default_mode'),
-          hash: '#defMode',
+          title: i18n.$t("default_mode"),
+          hash: "#defMode",
         },
         {
-          title: i18n.$t('slot_mode'),
-          hash: '#slotMode',
+          title: i18n.$t("slot_mode"),
+          hash: "#slotMode",
         },
         {
-          title: i18n.$t('static_mode'),
-          hash: '#staticMode',
-        }
-      ]
+          title: i18n.$t("static_mode"),
+          hash: "#staticMode",
+        },
+      ],
     },
     {
-      title: i18n.$t('advance_examples'),
-      url: '/advance-examples',
+      title: i18n.$t("advance_examples"),
+      url: "/advance-examples",
       submenu: [
         {
-          title: i18n.$t('customize_display_data'),
-          hash: '#customize-display-data',
+          title: i18n.$t("customize_display_data"),
+          hash: "#customize-display-data",
         },
         {
-          title: i18n.$t('filter'),
-          hash: '#filter',
+          title: i18n.$t("filter"),
+          hash: "#filter",
         },
         {
-          title: i18n.$t('asynchronous_filter'),
-          hash: '#asynchronous-filter',
+          title: i18n.$t("asynchronous_filter"),
+          hash: "#asynchronous-filter",
         },
         {
-          title: i18n.$t('customize_style'),
-          hash: '#customize-style',
+          title: i18n.$t("customize_style"),
+          hash: "#customize-style",
         },
         {
-          title: i18n.$t('customize_style_2'),
-          hash: '#customize-style-2',
+          title: i18n.$t("customize_style_2"),
+          hash: "#customize-style-2",
         },
         {
-          title: i18n.$t('customize_message'),
-          hash: '#customize-message',
+          title: i18n.$t("customize_message"),
+          hash: "#customize-message",
         },
         {
-          title: i18n.$t('customize_page_dropdown'),
-          hash: '#customize-page-dropdown',
+          title: i18n.$t("customize_page_dropdown"),
+          hash: "#customize-page-dropdown",
         },
         {
-          title: i18n.$t('catch_row_clicked'),
-          hash: '#catch-row-clicked',
+          title: i18n.$t("catch_row_clicked"),
+          hash: "#catch-row-clicked",
         },
         {
-          title: i18n.$t('fixed_first_column'),
-          hash: '#fixed-first-column',
-        }
-      ]
-    }
+          title: i18n.$t("fixed_first_column"),
+          hash: "#fixed-first-column",
+        },
+        {
+          title: "Show Controls",
+          hash: "#show-controls",
+        },
+      ],
+    },
   ];
-}
+};
 initMenu();
-
 </script>
 
 <style lang="postcss">

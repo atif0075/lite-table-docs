@@ -15,5 +15,12 @@ export default defineConfig({
     extend: {
     },
   },
+  shortcuts:{
+    'flex-bet': 'flex justify-between items-center',
+    'flex-cen': 'flex justify-center items-center',
+    'flex-end': 'flex justify-end items-center',
+    'flex-start': 'flex justify-start items-center',
+    'flex-colm': 'flex flex-col',
+  },
   plugins: [],
 })
