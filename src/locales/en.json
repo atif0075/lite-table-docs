@@ -82,10 +82,12 @@
     "customize_display_data": "Customize display data",
     "filter": "Filter",
     "asynchronous_filter": "Asynchronous filter",
+    "filter_in_table": "Columns filter",
     "customize_style": "Customize style",
     "customize_style_2": "Customize style2",
     "customize_message": "Customize messages",
     "customize_page_dropdown": "Customize page's dropdown",
     "catch_row_clicked": "Catch row clicked",
-    "fixed_first_column": "Fixed first column(Horizontal scrolling)"
+    "fixed_first_column": "Fixed first column(Horizontal scrolling)",
+    "show_controls": "Show controls"
 }

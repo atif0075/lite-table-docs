@@ -82,10 +82,12 @@
     "customize_display_data": "客製化顯示內容",
     "filter": "篩選內容（同步）",
     "asynchronous_filter": "篩選內容（非同步）",
+    "filter_in_table": "篩選欄位資料",
     "customize_style": "客製化外觀",
     "customize_style_2": "客製化外觀2",
     "customize_message": "客製化顯示文字",
     "customize_page_dropdown": "客製化每頁顯示筆數",
     "catch_row_clicked": "取得點擊行的資料",
-    "fixed_first_column": "水平滑動時鎖定最左邊的欄位"
+    "fixed_first_column": "水平滑動時鎖定最左邊的欄位",
+    "show_controls": "客製化功能鈕"
 }

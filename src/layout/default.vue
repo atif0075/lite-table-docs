@@ -282,6 +282,10 @@ const initMenu = () => {
           hash: "#asynchronous-filter",
         },
         {
+          title: i18n.$t("filter_in_table"),
+          hash: "#filter-in-table",
+        },
+        {
           title: i18n.$t("customize_style"),
           hash: "#customize-style",
         },
@@ -306,7 +310,7 @@ const initMenu = () => {
           hash: "#fixed-first-column",
         },
         {
-          title: "Show Controls",
+          title: i18n.$t("show_controls"),
           hash: "#show-controls",
         },
       ],
