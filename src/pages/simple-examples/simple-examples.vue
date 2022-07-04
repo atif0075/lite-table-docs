@@ -2,15 +2,15 @@
   <section>
     <Header :title="i18n.$t('simple_examples')" />
     <section class="pt-20 px-3 pb-10">
-      <div id="defMode">
+      <div id="defMode" class="min-h-190">
         <h1 class="head">{{ i18n.$t('default_mode') }}</h1>
         <PropExp class="pt-3" />
       </div>
-      <div id="slotMode">
+      <div id="slotMode" class="min-h-190">
         <h1 class="head">{{ i18n.$t('slot_mode') }}</h1>
         <VslotMode class="pt-3" />
       </div>
-      <div id="staticMode">
+      <div id="staticMode" class="min-h-190">
         <h1 class="head">{{ i18n.$t('static_mode') }}</h1>
         <StaticExp class="pt-3" />
       </div>
