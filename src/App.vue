@@ -22,7 +22,7 @@ provideI18n({
     en: en,
     jp: jp,
     tw: tw,
-    cn: cn
+    cn: cn,
   },
 });
 </script>
@@ -35,5 +35,10 @@ provideI18n({
 
 .quick-btn {
   @apply px-4 py-2  bg-light-dark text-white rounded;
+}
+@font-face {
+  font-family: "Dank Mono";
+  font-style: normal;
+  src: url(./assets/Dankmono.otf) format("otf");
 }
 </style>
