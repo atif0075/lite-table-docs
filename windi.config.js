@@ -13,9 +13,13 @@ export default defineConfig({
       'light-gray': '#d1e2e2',
     },
     extend: {
+      fontFamily: {
+        "code": "'Dank Mono', monospace",
+
+      },
     },
   },
-  shortcuts:{
+  shortcuts: {
     'flex-bet': 'flex justify-between items-center',
     'flex-cen': 'flex justify-center items-center',
     'flex-end': 'flex justify-end items-center',

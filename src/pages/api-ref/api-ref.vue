@@ -951,7 +951,7 @@
                   class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto relative"
                 >
                   <pre class="language-vue">
-                 <code >
+                 <code class="font-code">
                {{ codeBlock }}
                  </code>
              </pre>
@@ -980,10 +980,10 @@
                 </h1>
                 <div
                   v-highlight
-                  class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto relative"
+                  class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto relative "
                 >
-                  <pre class="language-vue">
-                 <code >
+                  <pre class="language-vue ">
+                 <code class="font-code">
                {{ codeBlock2 }}
                  </code>
              </pre>
