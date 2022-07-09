@@ -39,7 +39,16 @@ const routes = [
       },
     ],
   },
-
+  {
+    path: "/robots.txt",
+    meta: { title: "Robots" },
+    component: () => import("../../robots.txt"),
+  },
+  {
+    path: "/sitemap.xml",
+    meta: { title: "Sitemap" },
+    component: () => import("../../sitemap.xml"),
+  }
 ];
 const router = createRouter({
   history: createWebHistory(),
