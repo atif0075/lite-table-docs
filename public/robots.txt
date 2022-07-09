@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: "./sitemap.xml"
+Sitemap: "https://vue3-lite-table.vercel.app/sitemap.xml"
