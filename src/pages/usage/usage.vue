@@ -13,7 +13,7 @@
             <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto relative">
             <div v-highlight>
                 <pre class="language-vue">
-                 <code >
+                 <code class="font-code">
                  {{ items.tempCode }}
                  </code>
              </pre>
@@ -30,7 +30,7 @@
             <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-auto relative" >
             <div v-highlight>
                 <pre class="language-vue">
-                 <code >
+                 <code class="font-code">
                  {{ items.scriptCode }}
                  </code>
              </pre>
