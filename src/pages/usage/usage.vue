@@ -10,23 +10,37 @@
                 {{ items.desc }}
             </div>
             <h1 class="text-sm font-semibold py-2">Template:</h1>
-            <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto">
+            <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-x-auto relative">
             <div v-highlight>
                 <pre class="language-vue">
                  <code >
                  {{ items.tempCode }}
                  </code>
              </pre>
+                   <p @click="copy(items.tempCode)" class="absolute right-0 top-0 bg-gray/30 rounded p-1 text-xs cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+        </path>
+      </svg>
+    </p>
             </div>
             </p>
             <h1 class="text-sm font-semibold py-2">Script(Composition API):</h1>
-            <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-auto">
+            <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-1 rounded overflow-auto relative" >
             <div v-highlight>
                 <pre class="language-vue">
                  <code >
                  {{ items.scriptCode }}
                  </code>
              </pre>
+               <p @click="copy(items.scriptCode)" class="absolute right-0 top-0 bg-gray/30 rounded p-1 text-xs cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+        </path>
+      </svg>
+    </p>
             </div>
             </p>
         </div>
@@ -38,6 +52,7 @@
 import { ref, watch } from "vue";
 import Header from "../../components/Header.vue";
 import { useI18n } from "../../plugins/i18n";
+import useClipboard from "vue-clipboard3";
 const i18n = useI18n();
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });
@@ -325,6 +340,20 @@ watch(() => i18n.locale.value, () => {
   initUsageList();
 });
 initUsageList();
+
+
+
+const { toClipboard } = useClipboard();
+const copy = async (text) => {
+  try {
+    await toClipboard(text);
+    console.log("Copied to clipboard");
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+
 </script>
 <style >
 .head {
