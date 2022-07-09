@@ -9,7 +9,8 @@
           src="../assets/logo.svg"
           alt="logo"
         />
-        <span class="lg:hidden text-sm sm:text-xl"> Vue3 Table Lite -</span
+        <span class="lg:hidden text-sm sm:text-xl">
+          Vue3 Table Lite - &nbsp; </span
         ><span class="text-sm sm:text-xl"> {{ title }}</span>
       </h1>
     </div>
