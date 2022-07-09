@@ -117,7 +117,7 @@
     >
       <button
         @click="toggle = !toggle"
-        class="absolute right-2 top-4 z-10200 lg:hidden"
+        class="fixed right-2 top-5 z-10200 lg:hidden"
       >
         <svg
           class="w-6 h-6"
