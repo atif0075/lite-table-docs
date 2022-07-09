@@ -6,7 +6,7 @@
     <div>{{ i18n.$t("component_description") }}</div>
     <h1 class="head">{{ i18n.$t("install") }}</h1>
     <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-4 rounded relative overflow-hidden">
-      <code>{{ codeText[0] }}</code>
+      <code class="font-code">{{ codeText[0] }}</code>
     <p @click="copy(codeText[0])" class="absolute right-0 top-0 bg-gray/30 rounded p-1 text-xs cursor-pointer">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -17,7 +17,7 @@
     </p>
     <h1 class="head">{{ i18n.$t("include") }}</h1>
     <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-4 rounded relative overflow-hidden">
-      <code>{{ codeText[1] }}</code>
+      <code class="font-code">{{ codeText[1] }}</code>
     <p @click="copy(codeText[1])" class="absolute right-0 top-0 bg-gray/30 rounded p-1 text-xs cursor-pointer">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -28,7 +28,7 @@
     </p>
     <h1 class="head">TypeScript {{ i18n.$t("include") }}</h1>
     <p class="bg-light-gray bg-opacity-5 py-3 px-4 mt-4 rounded relative overflow-hidden">
-      <code>{{ codeText[2] }}</code>
+      <code class="font-code">{{ codeText[2] }}</code>
     <p @click="copy(codeText[2])" class="absolute right-0 top-0 bg-gray/30 rounded p-1 text-xs cursor-pointer">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
