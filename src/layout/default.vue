@@ -7,19 +7,31 @@
       <div
         class="h-16 p-2 fixed bg-dark w-[20%] flex flex-col justify-center border-b border-opacity-60 border-light-dark"
       >
-        <div
+        <router-link
+          to="/"
           class="text-gray font-bold text-xl tracking-wider hidden lg:flex items-center"
         >
           <div>
             <img class="w-8 mx-1" src="../assets/logo.svg" alt="logo" />
           </div>
           <h1>Vue3 Table Lite</h1>
-        </div>
+        </router-link>
       </div>
 
       <div>
         <div class="pt-20 px-4">
-          <main class="flex justify-end">
+          <main class="flex justify-between items-center">
+            <div>
+              <GithubButton
+                class="lg:hidden"
+                href="https://github.com/linmasahiro/vue3-table-lite"
+                data-icon="octicon-star"
+                data-size="small"
+                data-show-count="true"
+                aria-label="Star linmasahiro/vue3-table-lite on GitHub"
+                >Star</GithubButton
+              >
+            </div>
             <div class="relative inline-block text-left">
               <div>
                 <button
@@ -141,7 +153,7 @@
 <script setup>
 import { onMounted, ref, watch } from "vue";
 import { useI18n } from "../plugins/i18n";
-
+import GithubButton from "vue-github-button";
 let toggle = ref(false);
 const i18n = useI18n();
 
