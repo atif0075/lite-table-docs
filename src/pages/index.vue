@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-dark min-h-screen text-white">
+  <section class="bg-dark min-h-screen text-white 2xl:container 2xl:mx-auto 2xl:relative">
     <div
       class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex"
     >
@@ -14,7 +14,9 @@
           </strong>
         </h1>
 
-        <p class="mt-4 sm:leading-relaxed sm:text-xl">{{ i18n.$t('component_description') }}</p>
+        <p class="mt-4 sm:leading-relaxed sm:text-xl">
+          {{ i18n.$t("component_description") }}
+        </p>
 
         <div class="flex flex-wrap justify-center gap-4 mt-8">
           <router-link
@@ -31,8 +33,27 @@
           >
             Source Code
           </a>
+          <footer class="w-full flex text-sm justify-center items-center">
+            <div class="px-2">Created by</div>
+            <div>
+              <github-button
+                href="https://github.com/linmasahiro"
+                aria-label="Follow @linmasahiro on GitHub"
+                >Linmasahiro</github-button
+              >
+            </div>
+            <div class="px-2">Styled by</div>
+            <div>
+              <github-button
+                href="https://github.com/atif0075"
+                aria-label="Follow @atif0075 on GitHub"
+                >Atif</github-button
+              >
+            </div>
+          </footer>
         </div>
-          <div
+
+        <div
           class="absolute right-4 top-4 md:(right-12 top-12) inline-block text-left"
         >
           <div>
@@ -97,6 +118,7 @@
 <script setup>
 import { ref } from "vue";
 import { useI18n } from "../plugins/i18n";
+import GithubButton from "vue-github-button";
 const i18n = useI18n();
 let showLanguageSelector = ref(false);
 let currentLangName = ref("English");
@@ -106,7 +128,6 @@ let changeLang = (lang, name) => {
   showLanguageSelector.value = false;
 };
 </script>
-
 
 <style>
 ::-webkit-scrollbar {
@@ -122,4 +143,3 @@ let changeLang = (lang, name) => {
   @apply bg-light-dark rounded-full;
 }
 </style>
-
