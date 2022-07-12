@@ -1,6 +1,6 @@
 <template>
   <main class="bg-dark">
-    <div class="2xl:(container mx-auto)">
+    <div class="">
       <router-view />
     </div>
   </main>
