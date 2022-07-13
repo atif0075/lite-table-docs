@@ -1,7 +1,7 @@
 <template>
   <section class="box-border relative">
     <div
-      class="h-16 fixed w-full 2xl:w-[80%] p-2 z-99998 bg-dark top-0 flex flex-col justify-center border-b border-opacity-60 border-light-dark"
+      class="h-16 fixed w-full lg:w-[80%] p-2 z-99998 bg-dark top-0 flex flex-col justify-center border-b border-opacity-60 border-light-dark"
     >
       <div class="flex justify-between pr-4">
         <div
