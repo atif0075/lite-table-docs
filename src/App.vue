@@ -25,6 +25,7 @@ provideI18n({
     cn: cn,
   },
 });
+
 </script>
 
 <style>
