@@ -1,5 +1,7 @@
 <template>
-  <section class="bg-dark min-h-screen text-white 2xl:container 2xl:mx-auto 2xl:relative">
+  <section
+    class="bg-dark min-h-screen text-white 2xl:container 2xl:mx-auto 2xl:relative"
+  >
     <div
       class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex"
     >
@@ -109,6 +111,13 @@
               </div>
             </div>
           </div>
+          <div class="fixed bottom-0 right-5">
+            <p class="text-xs">
+              Page viewed: &nbsp;<span class="text-green px-1">
+                {{ pageViewed }}</span
+              >&nbsp;times
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -127,6 +136,17 @@ let changeLang = (lang, name) => {
   currentLangName.value = name;
   showLanguageSelector.value = false;
 };
+let pageViewed = ref("Loading");
+
+fetch("https://api.countapi.xyz/hit/vue3-lite-table.vercel.app/visits", {
+  method: "GET",
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    pageViewed.value = data.value;
+  });
 </script>
 
 <style>
