@@ -46,6 +46,14 @@
         <h1 class="head">{{ i18n.$t("show_controls") }}</h1>
         <ShowControls class="pt-3" />
       </div>
+      <div id="grouping" class="min-h-250">
+        <h1 class="head">{{ i18n.$t("grouping_with_toggle") }}</h1>
+        <Grouping class="pt-3" />
+      </div>
+      <div id="grouping2" class="min-h-250">
+        <h1 class="head">{{ i18n.$t("grouping") }}</h1>
+        <Grouping2 class="pt-3" />
+      </div>
     </section>
   </section>
 </template>
@@ -63,6 +71,8 @@ import FixedFirstColumn from "../../components/advance-examples/fixed-first-colu
 import { useI18n } from "../../plugins/i18n";
 import ShowControls from "../../components/advance-examples/show-controls.vue";
 import FilterInTable from "../../components/advance-examples/filter-in-table.vue";
+import Grouping from "../../components/advance-examples/Grouping.vue";
+import Grouping2 from "../../components/advance-examples/Grouping2.vue";
 const i18n = useI18n();
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });

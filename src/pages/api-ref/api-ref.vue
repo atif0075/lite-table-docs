@@ -685,6 +685,60 @@
             </ul>
           </ul>
         </li>
+        <li class="mb-2 list-square">
+          <b>grouping-key</b>
+          <ul class="list-disc pl-10">
+            <li>
+              {{ i18n.$t("description") }}:
+              <span v-html="i18n.$t('props_grouping_key_desc')"></span>
+            </li>
+            <li>
+              {{ i18n.$t("required") }}: <span class="text-green">No</span>
+            </li>
+            <li>
+              {{ i18n.$t("type") }}: <span class="text-green">string</span>
+            </li>
+            <li>
+              {{ i18n.$t("default") }}: <span class="text-green">null</span>
+            </li>
+          </ul>
+        </li>
+        <li class="mb-2 list-square">
+          <b>has-group-toggle</b>
+          <ul class="list-disc pl-10">
+            <li>
+              {{ i18n.$t("description") }}:
+              <span v-html="i18n.$t('props_has_group_toggle_desc')"></span>
+            </li>
+            <li>
+              {{ i18n.$t("required") }}: <span class="text-green">No</span>
+            </li>
+            <li>
+              {{ i18n.$t("type") }}: <span class="text-green">Boolean</span>
+            </li>
+            <li>
+              {{ i18n.$t("default") }}: <span class="text-green">false</span>
+            </li>
+          </ul>
+        </li>
+        <li class="mb-2 list-square">
+          <b>grouping-display</b>
+          <ul class="list-disc pl-10">
+            <li>
+              {{ i18n.$t("description") }}:
+              <span v-html="i18n.$t('props_grouping_display_desc')"></span>
+            </li>
+            <li>
+              {{ i18n.$t("required") }}: <span class="text-green">No</span>
+            </li>
+            <li>
+              {{ i18n.$t("type") }}: <span class="text-green">Function</span>
+            </li>
+            <li>
+              {{ i18n.$t("default") }}: <span class="text-green">null</span>
+            </li>
+          </ul>
+        </li>
       </div>
     </div>
     <div id="events">
@@ -697,6 +751,9 @@
               <li>
                 {{ i18n.$t("description") }}:
                 <span v-html="i18n.$t('events_do_search_desc')"></span>
+              </li>
+              <li>
+                {{ i18n.$t("required") }}: <span class="text-red-500">Yes</span>
               </li>
               <li>
                 {{ i18n.$t("hint") }}:

@@ -53,10 +53,13 @@
     "props_page_desc": "今のページ数（普通には同期や設定必要がありませんがもし他の方法でページを切り替える必要があれば、利用しても良いでしょう）",
     "props_page_size_desc": "ページごと表示件数設定 <span class=\"text-red-500\">ほとんど設定必要がないがもしデフォルトの値以外を設定したい場合、利用しても良いでしょう</span>",
     "props_page_options_desc": "ドロップダウンの選択肢",
+    "props_grouping_key_desc": "グルーピング表示を利用したい場合、キー名を設定してください",
+    "props_has_group_toggle_desc": "グルーピング状態で内容を表示・非表示トグル有無",
+    "props_grouping_display_desc": "カスタマイズグルーピングタイトル",
 
     "events": "イベント",
     "events_do_search_desc": "検索イベント（表示順の変更やページングされてから自動的に発火される）",
-    "events_do_search_hint": "静的モードの場合、設定必要がありません。",
+    "events_do_search_hint": "静的モードの場合、設定必要がありませんがデフォルトモードの場合忘れなく設定してください",
     "events_do_search_offset_desc": "バックエンドへ渡すオフセット",
     "events_do_search_limit_desc": "バックエンドへ渡すリミット",
     "events_do_search_order_desc": "バックエンドへ渡す表示順の項目（キー）",
@@ -89,5 +92,7 @@
     "customize_page_dropdown": "表示件数のカスタマイズ",
     "catch_row_clicked": "クリックした行データを取得",
     "fixed_first_column": "先頭の列を固定する（横スクロール時）",
-    "show_controls": "機能ボタンのカスタマイズ"
+    "show_controls": "機能ボタンのカスタマイズ",
+    "grouping_with_toggle": "グルーピング（非表示トグル有）",
+    "grouping": "グルーピング"
 }

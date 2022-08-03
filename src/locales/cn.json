@@ -53,10 +53,14 @@
     "props_page_desc": "现在页数（正常状况下不需要同步与设定，除非你想透过其他方法控制换页）",
     "props_page_size_desc": "每页显示笔数下拉框 <span class=\"text-red-500\">大部分状况下不需要设定</span>",
     "props_page_options_desc": "下拉框中的选项",
+    "props_grouping_key_desc": "当你想使用分类表示表格时，设定你的分类表示的关键字",
+    "props_has_group_toggle_desc": "在分类表示表格中是否显示可隐藏分类开关",
+    "props_grouping_display_desc": "在分类表示表格中定制分类标题",
+    
 
     "events": "事件",
     "events_do_search_desc": "查询事件<span class=\"text-red-500\">该事件会在换页或是重新排序时自动触发。</span>",
-    "events_do_search_hint": "在静态模式下为非必须",
+    "events_do_search_hint": "在一般模式下，一定要记得设定，而在静态模式下为非必须",
     "events_do_search_offset_desc": "你要丢给后端用的Offset值",
     "events_do_search_limit_desc": "你要丢给后端用的Limit值",
     "events_do_search_order_desc": "你要丢给后端用的排序的Key",
@@ -89,5 +93,7 @@
     "customize_page_dropdown": "定制每页显示笔数",
     "catch_row_clicked": "取得点击行的數據",
     "fixed_first_column": "水平滚动时锁定最左边的自段",
-    "show_controls": "定制功能鈕"
+    "show_controls": "定制功能鈕",
+    "grouping_with_toggle": "分类表示（有隐藏开关）",
+    "grouping": "分类表示"
 }

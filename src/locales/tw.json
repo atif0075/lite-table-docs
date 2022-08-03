@@ -53,10 +53,13 @@
     "props_page_desc": "現在頁數（正常狀況下不需要同步與設定，除非你想透過其他方法控制換頁）",
     "props_page_size_desc": "每頁顯示筆數下拉選單 <span class=\"text-red-500\">大部分狀況下不需要設定</span>",
     "props_page_options_desc": "下拉選單中的選項",
+    "props_grouping_key_desc": "當你想使用分類顯示表格時，設定你的分類顯示的關鍵字",
+    "props_has_group_toggle_desc": "在分類顯示表格中是否顯示可隱藏分類開關",
+    "props_grouping_display_desc": "在分類顯示表格中客製化分類標題",
 
     "events": "事件",
     "events_do_search_desc": "查詢事件<span class=\"text-red-500\">該事件會在換頁或是重新排序時自動觸發。</span>",
-    "events_do_search_hint": "在靜態模式下為非必須",
+    "events_do_search_hint": "在一般模式下，一定要記得設定，而在靜態模式下則非必須",
     "events_do_search_offset_desc": "你要丟給後端用的Offset值",
     "events_do_search_limit_desc": "你要丟給後端用的Limit值",
     "events_do_search_order_desc": "你要丟給後端用的排序的Key",
@@ -89,5 +92,7 @@
     "customize_page_dropdown": "客製化每頁顯示筆數",
     "catch_row_clicked": "取得點擊行的資料",
     "fixed_first_column": "水平滑動時鎖定最左邊的欄位",
-    "show_controls": "客製化功能鈕"
+    "show_controls": "客製化功能鈕",
+    "grouping_with_toggle": "分類顯示（有隱藏開關）",
+    "grouping": "分類顯示"
 }

@@ -325,6 +325,14 @@ const initMenu = () => {
           title: i18n.$t("show_controls"),
           hash: "#show-controls",
         },
+        {
+          title: i18n.$t("grouping_with_toggle"),
+          hash: "#grouping",
+        },
+        {
+          title: i18n.$t("grouping"),
+          hash: "#grouping2",
+        },
       ],
     },
   ];

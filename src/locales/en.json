@@ -53,10 +53,13 @@
     "props_page_desc": "If you want to control page no yourself, use it can will be to change page no.",
     "props_page_size_desc": "Default display the number of items on one page. In most cases no set required.",
     "props_page_options_desc": "Option list for pages dropdown",
+    "props_grouping_key_desc": "If you want use grouping table, set your grouping field's name.",
+    "props_has_group_toggle_desc": "Show group toggle if you'r using grouping table.",
+    "props_grouping_display_desc": "Customize grouping title display if you'r using grouping table.",
 
     "events": "Events",
     "events_do_search_desc": "Your search event. It's will be auto trigger after data sort and paging.",
-    "events_do_search_hint": "In static-mode no set required.",
+    "events_do_search_hint": "It's required in default-mode, and in static-mode is not.",
     "events_do_search_offset_desc": "Offset value for database.",
     "events_do_search_limit_desc": "limit value for database.",
     "events_do_search_order_desc": "Sortable value for database.",
@@ -89,5 +92,7 @@
     "customize_page_dropdown": "Customize page's dropdown",
     "catch_row_clicked": "Catch row clicked",
     "fixed_first_column": "Fixed first column(Horizontal scrolling)",
-    "show_controls": "Show controls"
+    "show_controls": "Show controls",
+    "grouping_with_toggle": "Grouping(With toggle)",
+    "grouping": "Grouping"
 }
