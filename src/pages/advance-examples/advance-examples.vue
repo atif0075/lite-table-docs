@@ -71,8 +71,8 @@ import FixedFirstColumn from "../../components/advance-examples/fixed-first-colu
 import { useI18n } from "../../plugins/i18n";
 import ShowControls from "../../components/advance-examples/show-controls.vue";
 import FilterInTable from "../../components/advance-examples/filter-in-table.vue";
-import Grouping from "../../components/advance-examples/Grouping.vue";
-import Grouping2 from "../../components/advance-examples/Grouping2.vue";
+import Grouping from "../../components/advance-examples/grouping.vue";
+import Grouping2 from "../../components/advance-examples/grouping2.vue";
 const i18n = useI18n();
 let scrollBehavior = () => {
   document.getElementById("app")?.scrollIntoView({ behavior: "smooth" });
