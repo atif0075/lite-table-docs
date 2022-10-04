@@ -91,7 +91,8 @@
     "customize_message": "客製化顯示文字",
     "customize_page_dropdown": "客製化每頁顯示筆數",
     "catch_row_clicked": "取得點擊行的資料",
-    "fixed_first_column": "水平滑動時鎖定最左邊的欄位",
+    "fixed_first_column": "水平滑動時鎖定第一個欄位",
+    "fixed_header_and_first_column": "滑動時鎖定表頭與第一個欄位",
     "show_controls": "客製化功能鈕",
     "grouping_with_toggle": "分類顯示（有隱藏開關）",
     "grouping": "分類顯示"

@@ -92,6 +92,7 @@
     "customize_page_dropdown": "Customize page's dropdown",
     "catch_row_clicked": "Catch row clicked",
     "fixed_first_column": "Fixed first column(Horizontal scrolling)",
+    "fixed_header_and_first_column": "Fixed header and first column(scrolling)",
     "show_controls": "Show controls",
     "grouping_with_toggle": "Grouping(With toggle)",
     "grouping": "Grouping"

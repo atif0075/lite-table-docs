@@ -322,6 +322,10 @@ const initMenu = () => {
           hash: "#fixed-first-column",
         },
         {
+          title: i18n.$t("fixed_header_and_first_column"),
+          hash: "#fixed-header-and-first-column",
+        },
+        {
           title: i18n.$t("show_controls"),
           hash: "#show-controls",
         },
