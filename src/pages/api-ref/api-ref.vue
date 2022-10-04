@@ -138,6 +138,42 @@
             </ul>
           </li>
           <li class="mb-2 list-square">
+            <b>is-fixed-first-column</b>
+            <ul class="list-disc pl-10">
+              <li>
+                {{ i18n.$t("description") }}:
+                {{ i18n.$t("props_is_fixed_first_column_desc") }}
+              </li>
+              <li>
+                {{ i18n.$t("required") }}: <span class="text-green">No</span>
+              </li>
+              <li>
+                {{ i18n.$t("type") }}: <span class="text-green">Boolean</span>
+              </li>
+              <li>
+                {{ i18n.$t("default") }}: <span class="text-green">false</span>
+              </li>
+            </ul>
+          </li>
+          <li class="mb-2 list-square">
+            <b>max-height</b>
+            <ul class="list-disc pl-10">
+              <li>
+                {{ i18n.$t("description") }}:
+                {{ i18n.$t("props_max_height_desc") }}
+              </li>
+              <li>
+                {{ i18n.$t("required") }}: <span class="text-green">No</span>
+              </li>
+              <li>
+                {{ i18n.$t("type") }}: <span class="text-green">String || Number</span>
+              </li>
+              <li>
+                {{ i18n.$t("default") }}: <span class="text-green">"auto"</span>
+              </li>
+            </ul>
+          </li>
+          <li class="mb-2 list-square">
             <b>columns</b>
             <ul class="list-disc pl-10">
               <li>

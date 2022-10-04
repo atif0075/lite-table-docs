@@ -27,6 +27,8 @@
     "props_checked_return_type_desc": "クリックした行の戻り値の型",
     "props_is_loading_desc": "読み込み中マスクの表示有無（静的モードの場合、必須ではありません）",
     "props_is_re_search_desc": "データの再読込（静的モードの場合、必須ではありません）",
+    "props_is_fixed_first_column_desc": "先頭の列固定有無",
+    "props_max_height_desc": "テーブルの高さ",
     "props_columns_desc": "コラム",
     "props_columns_isKey_desc": "コラムのメインキー",
     "props_columns_label_desc": "表示用文言",

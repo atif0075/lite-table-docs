@@ -27,6 +27,8 @@
     "props_checked_return_type_desc": "Return checked row data's type",
     "props_is_loading_desc": "Show loading mask (Not required on is-static-mode)",
     "props_is_re_search_desc": "If reload data, be set true (Not required on is-static-mode)",
+    "props_is_fixed_first_column_desc": "Fixed first column on scrolling",
+    "props_max_height_desc": "Table's max height",
     "props_columns_desc": "The table columns",
     "props_columns_isKey_desc": "If field is primary key. set to true",
     "props_columns_label_desc": "Field lable for display",

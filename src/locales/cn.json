@@ -27,6 +27,8 @@
     "props_checked_return_type_desc": "返回有勾选的值的类型。可返回 key 或是整笔數據",
     "props_is_loading_desc": "显示读取遮罩（在静态模式中可无视）",
     "props_is_re_search_desc": "是否为再度查询（在静态模式中可无视）",
+    "props_is_fixed_first_column_desc": "是否水平滚动时锁定最左边的字段",
+    "props_max_height_desc": "表高度",
     "props_columns_desc": "表格字段",
     "props_columns_isKey_desc": "字段是否为Key值",
     "props_columns_label_desc": "字段显示于画面的名称",
@@ -93,7 +95,7 @@
     "customize_page_dropdown": "定制每页显示笔数",
     "catch_row_clicked": "取得点击行的數據",
     "fixed_first_column": "水平滚动时锁定最左边的字段",
-    "fixed_header_and_first_column": "滚动时锁定表頭與字段",
+    "fixed_header_and_first_column": "滚动时锁定表头与字段",
     "show_controls": "定制功能鈕",
     "grouping_with_toggle": "分类表示（有隐藏开关）",
     "grouping": "分类表示"

@@ -27,6 +27,8 @@
     "props_checked_return_type_desc": "返回有勾選的值的類型。可返回 key 或是整筆資料",
     "props_is_loading_desc": "顯示讀取遮罩（在靜態模式中可無視）",
     "props_is_re_search_desc": "是否為再度查詢（在靜態模式中可無視）",
+    "props_is_fixed_first_column_desc": "是否於水平滑動時鎖住第一個欄位",
+    "props_max_height_desc": "表格高度",
     "props_columns_desc": "表格欄位",
     "props_columns_isKey_desc": "欄位是否為Key值",
     "props_columns_label_desc": "欄位顯示於畫面的名稱",
