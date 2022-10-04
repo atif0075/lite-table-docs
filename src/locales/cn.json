@@ -92,7 +92,8 @@
     "customize_message": "定制显示文字",
     "customize_page_dropdown": "定制每页显示笔数",
     "catch_row_clicked": "取得点击行的數據",
-    "fixed_first_column": "水平滚动时锁定最左边的自段",
+    "fixed_first_column": "水平滚动时锁定最左边的字段",
+    "fixed_header_and_first_column": "滚动时锁定表頭與字段",
     "show_controls": "定制功能鈕",
     "grouping_with_toggle": "分类表示（有隐藏开关）",
     "grouping": "分类表示"

@@ -42,6 +42,10 @@
         <h1 class="head">{{ i18n.$t("fixed_first_column") }}</h1>
         <FixedFirstColumn class="pt-3" />
       </div>
+      <div id="fixed-header-and-first-column" class="min-h-100">
+        <h1 class="head">{{ i18n.$t("fixed_header_and_first_column") }}</h1>
+        <FixedHeaderAndFirstColumn class="pt-3" />
+      </div>
       <div id="show-controls" class="min-h-100">
         <h1 class="head">{{ i18n.$t("show_controls") }}</h1>
         <ShowControls class="pt-3" />
@@ -68,6 +72,7 @@ import CusMessage from "../../components/advance-examples/cus-message.vue";
 import CusPageDrop from "../../components/advance-examples/cus-page-drop.vue";
 import CatchRow from "../../components/advance-examples/catch-row.vue";
 import FixedFirstColumn from "../../components/advance-examples/fixed-first-column.vue";
+import FixedHeaderAndFirstColumn from "../../components/advance-examples/fixed-header-and-first-column.vue";
 import { useI18n } from "../../plugins/i18n";
 import ShowControls from "../../components/advance-examples/show-controls.vue";
 import FilterInTable from "../../components/advance-examples/filter-in-table.vue";
