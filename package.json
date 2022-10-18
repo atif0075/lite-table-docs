@@ -14,7 +14,7 @@
     "vue-github-button": "^3.0.3",
     "vue-router": "^4.0.15",
     "vue3-click-away": "^1.2.4",
-    "vue3-table-lite": "^1.2.5"
+    "vue3-table-lite": "^1.2.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
