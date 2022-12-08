@@ -58,6 +58,7 @@
     "props_grouping_key_desc": "If you want use grouping table, set your grouping field's name.",
     "props_has_group_toggle_desc": "Show group toggle if you'r using grouping table.",
     "props_grouping_display_desc": "Customize grouping title display if you'r using grouping table.",
+    "props_start_collapsed_desc": "Grouping rows will be collapsed after initial",
 
     "events": "Events",
     "events_do_search_desc": "Your search event. It's will be auto trigger after data sort and paging.",
@@ -74,6 +75,9 @@
     "events_get_now_page_pageNo_desc": "Pass by page no.",
     "events_row_clicked_desc": "You can get row data from this function after row clicked.",
     "events_row_clicked_rowData_desc": "Pass by row data.",
+    "events_row_toggled_desc": "You can get rows data and toggle state after toggled.",
+    "events_row_toggled_rows_desc": "Pass by grouping rows.",
+    "events_row_toggled_is_collapsed_desc": "Pass by collapse state.",
 
     "slots": "Slots",
     "slots_description": "This is option. But, If you enabled V-slot mode, You should be to write it.",

@@ -58,6 +58,7 @@
     "props_grouping_key_desc": "グルーピング表示を利用したい場合、キー名を設定してください",
     "props_has_group_toggle_desc": "グルーピング状態で内容を表示・非表示トグル有無",
     "props_grouping_display_desc": "カスタマイズグルーピングタイトル",
+    "props_start_collapsed_desc": "初期化の時、グルーピングを全て折り畳み",
 
     "events": "イベント",
     "events_do_search_desc": "検索イベント（表示順の変更やページングされてから自動的に発火される）",
@@ -74,6 +75,9 @@
     "events_get_now_page_pageNo_desc": "ページ番号",
     "events_row_clicked_desc": "行がクリックされてからこのイベントが発火される",
     "events_row_clicked_rowData_desc": "行データ",
+    "events_row_toggled_desc": "グループの折り畳み状態が変更されてから発火される",
+    "events_row_toggled_rows_desc": "グループ内の行データ",
+    "events_row_toggled_is_collapsed_desc": "今の折り畳み状態",
 
     "slots": "スロット",
     "slots_description": "スロットは必須ではないが、もしスロットモードを利用する場合、入れた方がよいかもしれません。",

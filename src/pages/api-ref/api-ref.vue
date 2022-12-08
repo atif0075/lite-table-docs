@@ -775,6 +775,24 @@
             </li>
           </ul>
         </li>
+        <li class="mb-2 list-square">
+          <b>start-collapsed</b>
+          <ul class="list-disc pl-10">
+            <li>
+              {{ i18n.$t("description") }}:
+              <span v-html="i18n.$t('props_start_collapsed_desc')"></span>
+            </li>
+            <li>
+              {{ i18n.$t("required") }}: <span class="text-green">No</span>
+            </li>
+            <li>
+              {{ i18n.$t("type") }}: <span class="text-green">Boolean</span>
+            </li>
+            <li>
+              {{ i18n.$t("default") }}: <span class="text-green">false</span>
+            </li>
+          </ul>
+        </li>
       </div>
     </div>
     <div id="events">
@@ -1011,6 +1029,60 @@
                       <li>
                         {{ i18n.$t("type") }}:
                         <span class="text-green">Object</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mb-2">
+            <b>row-toggled</b>
+            <ul class="list-disc pl-10">
+              <li>
+                {{ i18n.$t("description") }}:
+                {{ i18n.$t("events_row_toggled_desc") }}
+              </li>
+              <li>
+                {{ i18n.$t("type") }}:
+                <span class="text-green">(rows, isCollapsed) =&gt; void</span>
+              </li>
+              <li>
+                Arguments:
+                <ul class="list-square pl-10">
+                  <li>
+                    <ul class="list-disc pl-10">
+                      <b>rows</b>
+                      <li>
+                        {{ i18n.$t("description") }}:
+                        {{ i18n.$t("events_row_toggled_rows_desc") }}
+                      </li>
+                      <li>
+                        {{ i18n.$t("required") }}:
+                        <span class="text-green">Yes</span>
+                      </li>
+                      <li>
+                        {{ i18n.$t("type") }}:
+                        <span class="text-green">Array</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="list-square pl-10">
+                  <li>
+                    <ul class="list-disc pl-10">
+                      <b>isCollapsed</b>
+                      <li>
+                        {{ i18n.$t("description") }}:
+                        {{ i18n.$t("events_row_toggled_is_collapsed_desc") }}
+                      </li>
+                      <li>
+                        {{ i18n.$t("required") }}:
+                        <span class="text-green">Yes</span>
+                      </li>
+                      <li>
+                        {{ i18n.$t("type") }}:
+                        <span class="text-green">Boolean</span>
                       </li>
                     </ul>
                   </li>

@@ -73,8 +73,11 @@
     "events_return_checked_rows_rowsKey_desc": "勾选中的Key值",
     "events_get_now_page_desc": "你能够透过该事件取得目前的页数",
     "events_get_now_page_pageNo_desc": "目前页数",
-    "events_row_clicked_desc": "你能够过该事件取得目前被点击的行數據",
+    "events_row_clicked_desc": "你能够透过该事件取得目前被点击的行數據",
     "events_row_clicked_rowData_desc": "行數據",
+    "events_row_toggled_desc": "你能够透过该事件取得目前被折叠或开启的行资料与折叠状态",
+    "events_row_toggled_rows_desc": "群組中的行資料",
+    "events_row_toggled_is_collapsed_desc": "是否折疊",
 
     "slots": "插槽",
     "slots_description": "这是一个选项功能，如果你将使用插槽模式渲染内容，那麽你应该使用下方方式定义模版。",
