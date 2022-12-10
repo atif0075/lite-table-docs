@@ -1,11 +1,11 @@
 <template>
-  <section class="w-full flex bg-dark ">
+  <section class="w-full flex bg-dark">
     <main
       :class="[toggle ? 'hidden' : 'animate-slide-in-left']"
-      class="w-[80%] absolute z-9999 bg-dark lg:(w-[20%] static animate-none) min-h-screen h-screen overflow-auto"
+      class="w-[80%] absolute z-9999 bg-dark lg:(w-[20%] relative animate-none) min-h-screen h-screen overflow-auto"
     >
       <div
-        class="h-16 p-2 fixed bg-dark w-[20%] flex flex-col justify-center border-b border-opacity-60 border-light-dark"
+        class="h-16 p-2 fixed z-10 bg-dark w-[20%] flex flex-col justify-center border-b border-opacity-60 border-light-dark"
       >
         <router-link
           to="/"
@@ -32,7 +32,7 @@
                 >Star</GithubButton
               >
             </div>
-            <div class="relative inline-block text-left">
+            <div class="relative z-[1] inline-block text-left">
               <div>
                 <button
                   @click="showLanguageSelector = !showLanguageSelector"
