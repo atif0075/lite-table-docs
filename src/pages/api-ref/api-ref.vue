@@ -793,6 +793,24 @@
             </li>
           </ul>
         </li>
+        <li class="mb-2 list-square">
+          <b>is-keep-collapsed</b>
+          <ul class="list-disc pl-10">
+            <li>
+              {{ i18n.$t("description") }}:
+              <span v-html="i18n.$t('props_is_keep_collapsed_desc')"></span>
+            </li>
+            <li>
+              {{ i18n.$t("required") }}: <span class="text-green">No</span>
+            </li>
+            <li>
+              {{ i18n.$t("type") }}: <span class="text-green">Boolean</span>
+            </li>
+            <li>
+              {{ i18n.$t("default") }}: <span class="text-green">false</span>
+            </li>
+          </ul>
+        </li>
       </div>
     </div>
     <div id="events">

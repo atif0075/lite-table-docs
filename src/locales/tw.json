@@ -59,6 +59,7 @@
     "props_has_group_toggle_desc": "在分類顯示表格中是否顯示可隱藏分類開關",
     "props_grouping_display_desc": "在分類顯示表格中客製化分類標題",
     "props_start_collapsed_desc": "在一開始就把分類表全部折疊起來",
+    "props_is_keep_collapsed_desc": "在畫面更新後保持折疊狀態",
 
     "events": "事件",
     "events_do_search_desc": "查詢事件<span class=\"text-red-500\">該事件會在換頁或是重新排序時自動觸發。</span>",

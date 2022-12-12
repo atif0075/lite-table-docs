@@ -59,6 +59,7 @@
     "props_has_group_toggle_desc": "Show group toggle if you'r using grouping table.",
     "props_grouping_display_desc": "Customize grouping title display if you'r using grouping table.",
     "props_start_collapsed_desc": "Grouping rows will be collapsed after initial",
+    "props_is_keep_collapsed_desc": "Keep collapsed status after refresh",
 
     "events": "Events",
     "events_do_search_desc": "Your search event. It's will be auto trigger after data sort and paging.",
