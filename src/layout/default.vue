@@ -2,7 +2,7 @@
   <section class="w-full flex bg-primary">
     <main
       :class="[toggle ? 'hidden' : 'animate-slide-in-left']"
-      class="w-[80%] border-r border-white border-opacity-10 absolute z-98 lg:w-[20%] lg:relative lg:animate-none min-h-screen h-screen overflow-auto"
+      class="w-[80%] bg-primary border-r border-white border-opacity-10 absolute z-98 lg:w-[20%] lg:relative lg:animate-none min-h-screen h-screen overflow-auto"
     >
       <div
         class="h-16 p-2 sticky z-10 glass w-full top-0 left-0 flex flex-col justify-center border-b border-opacity-60 border-secondary"
