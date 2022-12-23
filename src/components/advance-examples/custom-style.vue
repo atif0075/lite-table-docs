@@ -17,7 +17,7 @@
       <button>
         <a
           target="_blank"
-          class="bg-light-dark px-4 py-2 flex items-center"
+          class="bg-secondary px-4 py-2 flex items-center"
           href="https://github.com/linmasahiro/vue3-table-lite/blob/master/src/examples/CustomizeStyle.vue"
         >
           <p class="text-base font-semibold pr-1">View Source</p>
@@ -124,7 +124,7 @@ const table = reactive({
         return (
           '<button type="button" data-id="' +
           row.id +
-          '" class="is-rows-el quick-btn bg-light-dark px-4 py-2 text-white">Button</button>'
+          '" class="is-rows-el quick-btn bg-secondary px-4 py-2 text-white">Button</button>'
         );
       },
     },

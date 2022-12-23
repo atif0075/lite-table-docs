@@ -1,7 +1,7 @@
 <template>
   <section>
     <Header :title="i18n.$t('advance_examples')" />
-    <section class="pt-20 px-3 pb-10">
+    <section class="px-3 pb-10">
       <div id="customize-display-data" class="min-h-230">
         <h1 class="head">{{ i18n.$t("customize_display_data") }}</h1>
         <CusDisplayData class="pt-3" />

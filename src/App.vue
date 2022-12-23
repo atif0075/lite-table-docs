@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-dark">
+  <main class="bg-primary">
     <div class="">
       <router-view />
     </div>
@@ -25,7 +25,6 @@ provideI18n({
     cn: cn,
   },
 });
-
 </script>
 
 <style>
@@ -33,9 +32,11 @@ provideI18n({
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
-
+.hljs {
+  @apply !bg-transparent;
+}
 .quick-btn {
-  @apply px-4 py-2  bg-light-dark text-white rounded;
+  @apply px-4 py-2  bg-secondary text-white rounded;
 }
 @font-face {
   font-family: "Dank Mono";

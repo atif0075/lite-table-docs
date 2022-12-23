@@ -2,7 +2,7 @@
   <section>
     <main>
       <div
-        class="bg-dark sm:p-5 text-white h-full min-h-120 overflow-scroll px-2 rounded"
+        class="bg-primary sm:p-5 text-white h-full min-h-120 overflow-scroll px-2 rounded"
       >
         <h1 class="text-center py-4 font-bold text-sm sm:text-xl uppercase">
           {{ App }}

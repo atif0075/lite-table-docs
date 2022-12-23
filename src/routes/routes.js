@@ -44,7 +44,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  linkExactActiveClass: "border-l-4 border-green",
+  linkExactActiveClass: "border-l-4 border-green bg-secondary",
   scrollBehavior(to) {
     if (to.hash) {
       document.querySelector(to.hash)?.scrollIntoView(true);

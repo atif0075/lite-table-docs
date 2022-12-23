@@ -50,7 +50,7 @@
   </section>
   <section
     v-if="openModel"
-    class="fixed top-0 left-0 px-2 md:px-24 py-10 pt-15 w-full min-h-screen bg-black bg-opacity-90 z-99999"
+    class="fixed top-0 left-0 px-2 md:px-24 py-10 pt-15 w-full min-h-screen bg-black bg-opacity-90 z-100"
   >
     <div v-click-away="onClickAway">
       <Model :App="App" :allSubs="allSubs" :marks="marks" />
@@ -60,7 +60,7 @@
     <button>
       <a
         target="_blank"
-        class="bg-light-dark px-4 py-2 flex items-center"
+        class="bg-secondary px-4 py-2 flex items-center"
         href="https://github.com/linmasahiro/vue3-table-lite/blob/master/src/examples/ShowControls.vue"
       >
         <p class="text-base font-semibold pr-1">View Source</p>
@@ -210,7 +210,7 @@ let deleteCurrentRow = (row) => {
 </script>
 <style scoped>
 ::v-deep(.vtl-table .vtl-thead .vtl-thead-th) {
-  @apply border-0 border-b border-[#e6e6e6] font-semibold text-sm  text-white bg-light-dark py-5 px-5;
+  @apply border-0 border-b border-[#e6e6e6] font-semibold text-sm  text-white bg-secondary py-5 px-5;
 }
 ::v-deep(.vtl-table td) {
   @apply border-0;

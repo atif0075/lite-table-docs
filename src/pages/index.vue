@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-dark min-h-screen text-white 2xl:container 2xl:mx-auto 2xl:relative"
+    class="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-emerald-900 via-zinc-900 to-emerald-900 min-h-screen text-white 2xl:container 2xl:mx-auto 2xl:relative"
   >
     <div
       class="max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex"
@@ -22,7 +22,7 @@
 
         <div class="flex flex-wrap justify-center gap-4 mt-8">
           <router-link
-            class="block w-full px-12 py-3 text-sm font-medium text-dark bg-green rounded shadow sm:w-auto"
+            class="block w-full px-12 py-3 text-sm font-medium text-primary bg-green rounded shadow sm:w-auto"
             to="/quick-start"
           >
             Get Started
@@ -31,7 +31,7 @@
           <a
             target="_blank"
             href="https://github.com/linmasahiro/vue3-table-lite"
-            class="block w-full px-12 py-3 text-sm font-medium text-green rounded shadow sm:w-auto hover:(bg-green text-dark) border transition ease-in duration-200"
+            class="block w-full px-12 py-3 text-sm font-medium text-green rounded shadow sm:w-auto hover:bg-green hover:text-primary border transition ease-in-out duration-300"
           >
             Source Code
           </a>
@@ -56,13 +56,13 @@
         </div>
 
         <div
-          class="absolute right-4 top-4 md:(right-12 top-12) inline-block text-left"
+          class="absolute right-4 top-4 md:right-12 md:top-12 inline-block text-left"
         >
           <div>
             <button
               @click="showLanguageSelector = !showLanguageSelector"
               type="button"
-              class="inline-flex justify-center w-full rounded-md border border-dark shadow-sm px-4 py-2 bg-light-dark text-white text-sm font-medium focus:outline-none"
+              class="inline-flex justify-center w-full rounded-md border border-zinc-700 shadow-sm px-4 py-2 bg-zinc-900 text-white text-sm font-medium focus:outline-none"
             >
               {{ currentLangName }}
               <svg
@@ -82,30 +82,30 @@
           </div>
           <div
             v-if="showLanguageSelector"
-            class="origin-top-right absolute right-0 mt-2 w-56 text-white rounded-md shadow-lg bg-light-dark focus:outline-none"
+            class="origin-top-right absolute right-0 mt-2 w-56 text-white rounded-md shadow-lg bg-zinc-900 focus:outline-none"
           >
             <div class="py-1 cursor-pointer">
               <div
                 @click="changeLang('en', 'English')"
-                class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                class="hover:bg-zinc-800 block px-4 py-2 text-sm"
               >
                 English
               </div>
               <div
                 @click="changeLang('jp', '日本語')"
-                class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                class="hover:bg-zinc-800 block px-4 py-2 text-sm"
               >
                 日本語
               </div>
               <div
                 @click="changeLang('tw', '繁體中文')"
-                class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                class="hover:bg-zinc-800 block px-4 py-2 text-sm"
               >
                 繁體中文
               </div>
               <div
                 @click="changeLang('cn', '简体中文')"
-                class="hover:bg-dark/40 block px-4 py-2 text-sm"
+                class="hover:bg-zinc-800 block px-4 py-2 text-sm"
               >
                 简体中文
               </div>
@@ -154,12 +154,29 @@ fetch("https://api.countapi.xyz/hit/vue3-lite-table.vercel.app/visits", {
   width: 8px;
   height: 4px;
 }
-
+.bg-hero {
+  background: linear-gradient(
+      327.21deg,
+      #05966873 3.65%,
+      rgba(0, 136, 7, 0) 40.32%
+    ),
+    linear-gradient(
+      245.93deg,
+      rgba(21, 209, 71, 0.16) 0%,
+      rgba(74, 209, 25, 0) 36.63%
+    ),
+    linear-gradient(
+      147.6deg,
+      rgba(19, 255, 27, 0) 29.79%,
+      rgba(31, 255, 19, 0.01) 85.72%
+    ),
+    #13111c;
+}
 ::-webkit-scrollbar-track {
-  @apply bg-dark;
+  @apply bg-primary;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-light-dark rounded-full;
+  @apply bg-secondary rounded-full;
 }
 </style>

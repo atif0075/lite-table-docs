@@ -14,11 +14,15 @@
     "vue-github-button": "^3.0.3",
     "vue-router": "^4.0.15",
     "vue3-click-away": "^1.2.4",
+    "vue3-highlightjs": "^1.0.5",
     "vue3-table-lite": "^1.2.9"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.3",
-    "vite": "^2.9.9",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.3",
     "vite-plugin-windicss": "^1.8.4",
     "windicss": "^3.5.4"
   }

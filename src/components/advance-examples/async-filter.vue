@@ -3,7 +3,7 @@
     <div>
       <label class="text-sm font-semibold">SearchBy:</label>
       <input
-        class="outline-none border border-green border-dashed border-opacity-30 h-10 my-2 px-2 bg-light-dark w-full"
+        class="outline-none border border-green border-dashed border-opacity-30 h-10 my-2 px-2 bg-secondary w-full"
         v-model="searchTerm"
       />
     </div>
@@ -19,7 +19,7 @@
       <button>
         <a
           target="_blank"
-          class="bg-light-dark px-4 py-2 flex items-center"
+          class="bg-secondary px-4 py-2 flex items-center"
           href="https://github.com/linmasahiro/vue3-table-lite/blob/master/src/examples/Filter2.vue"
         >
           <p class="text-base font-semibold pr-1">View Source</p>
