@@ -31,7 +31,7 @@
     "props_max_height_desc": "Table's max height",
     "props_columns_desc": "The table columns",
     "props_columns_isKey_desc": "If field is primary key. set to true",
-    "props_columns_label_desc": "Field lable for display",
+    "props_columns_label_desc": "Field lable for display（HTML support）",
     "props_columns_field_desc": "Row field keyname",
     "props_columns_width_desc": "Field's width size",
     "props_columns_sortable_desc": "If the field can sorting. set to true",

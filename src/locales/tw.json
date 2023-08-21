@@ -31,7 +31,7 @@
     "props_max_height_desc": "表格高度",
     "props_columns_desc": "表格欄位",
     "props_columns_isKey_desc": "欄位是否為Key值",
-    "props_columns_label_desc": "欄位顯示於畫面的名稱",
+    "props_columns_label_desc": "欄位顯示於畫面的名稱（支援HTML標籤）",
     "props_columns_field_desc": "欄位在資料中代表的名稱",
     "props_columns_width_desc": "欄位在表格中佔有的畫面寬度",
     "props_columns_sortable_desc": "欄位是否可以排序",

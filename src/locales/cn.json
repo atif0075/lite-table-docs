@@ -31,7 +31,7 @@
     "props_max_height_desc": "表高度",
     "props_columns_desc": "表格字段",
     "props_columns_isKey_desc": "字段是否为Key值",
-    "props_columns_label_desc": "字段显示于画面的名称",
+    "props_columns_label_desc": "字段显示于画面的名称（支援HTML）",
     "props_columns_field_desc": "字段在數據中代表的名称",
     "props_columns_width_desc": "字段在表格中佔有的画面宽度",
     "props_columns_sortable_desc": "字段是否可以排序",

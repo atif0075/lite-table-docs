@@ -857,10 +857,10 @@
   dependencies:
     "highlight.js" "^10.3.2"
 
-"vue3-table-lite@^1.3.6":
-  "integrity" "sha512-lEGtqq4uNk39YGeE93ODe+rBV58EK6xiZ1w0rc3/1vG5dEam1Ja7rBmuHBpu58k9qMi8oKV0+6pTUcKFJnSLLg=="
-  "resolved" "https://registry.npmjs.org/vue3-table-lite/-/vue3-table-lite-1.3.6.tgz"
-  "version" "1.3.6"
+"vue3-table-lite@^1.3.8":
+  "integrity" "sha512-Cckqr4j+tZylzPPDv8FZ2qFcFwx7yfwYyDmNzitCIoqxOJPydTxpgDwY1fDJIh38Bb5h7rkwBH41RonklYiHyA=="
+  "resolved" "https://registry.npmjs.org/vue3-table-lite/-/vue3-table-lite-1.3.8.tgz"
+  "version" "1.3.8"
   dependencies:
     "vue" "^3.0.0"
 
