@@ -31,7 +31,7 @@
     "props_max_height_desc": "テーブルの高さ",
     "props_columns_desc": "コラム",
     "props_columns_isKey_desc": "コラムのメインキー",
-    "props_columns_label_desc": "表示用文言",
+    "props_columns_label_desc": "表示用文言（HTMLタグ利用可能）",
     "props_columns_field_desc": "データのキー名",
     "props_columns_width_desc": "コラムの幅",
     "props_columns_sortable_desc": "ソート可否",
@@ -60,6 +60,7 @@
     "props_grouping_display_desc": "カスタマイズグルーピングタイトル",
     "props_start_collapsed_desc": "初期化の時、グルーピングを全て折り畳み",
     "props_is_keep_collapsed_desc": "画面更新後も折り畳み状態を保持する",
+    "props_is_vertical_highlight_desc": "マウスオーバーの行をハイライトで表示する",
 
     "events": "イベント",
     "events_do_search_desc": "検索イベント（表示順の変更やページングされてから自動的に発火される）",
