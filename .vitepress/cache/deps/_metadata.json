@@ -1,0 +1,80 @@
+{
+  "hash": "bbd2731e",
+  "browserHash": "79059945",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "6781429f",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "27e22e0a",
+      "needsInterop": false
+    },
+    "vue-clipboard3": {
+      "src": "../../../node_modules/vue-clipboard3/dist/esm/index.js",
+      "file": "vue-clipboard3.js",
+      "fileHash": "2a8a2173",
+      "needsInterop": false
+    },
+    "vue-code-highlight": {
+      "src": "../../../node_modules/vue-code-highlight/dist/vue-code-highlight.esm.js",
+      "file": "vue-code-highlight.js",
+      "fileHash": "04d30cb8",
+      "needsInterop": false
+    },
+    "vue-github-button": {
+      "src": "../../../node_modules/vue-github-button/index.js",
+      "file": "vue-github-button.js",
+      "fileHash": "0abbcca6",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "b7f44257",
+      "needsInterop": false
+    },
+    "vue3-click-away": {
+      "src": "../../../node_modules/vue3-click-away/dist/module.js",
+      "file": "vue3-click-away.js",
+      "fileHash": "9b9b2440",
+      "needsInterop": false
+    },
+    "vue3-highlightjs": {
+      "src": "../../../node_modules/vue3-highlightjs/dist/vue3-highlight-es.js",
+      "file": "vue3-highlightjs.js",
+      "fileHash": "5a29e5dc",
+      "needsInterop": false
+    },
+    "vue3-table-lite": {
+      "src": "../../../node_modules/vue3-table-lite/index.js",
+      "file": "vue3-table-lite.js",
+      "fileHash": "ba4933e7",
+      "needsInterop": false
+    },
+    "@theme/index": {
+      "src": "../../../node_modules/vitepress/dist/client/theme-default/index.js",
+      "file": "@theme_index.js",
+      "fileHash": "c755d66f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "buttons.esm-D3M3OTVU": {
+      "file": "buttons__esm-D3M3OTVU.js"
+    },
+    "chunk-VULXNNZO": {
+      "file": "chunk-VULXNNZO.js"
+    },
+    "chunk-TU54KQDM": {
+      "file": "chunk-TU54KQDM.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/vue3-table-lite/index.js"],
+  "sourcesContent": ["import TableLite from './src/components/TableLite.vue';\n\nexport default TableLite;"],
+  "mappings": ";;;AAAA,OAAO,eAAe;AAEtB,IAAO,0BAAQ;",
+  "names": []
+}
