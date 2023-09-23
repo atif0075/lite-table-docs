@@ -11,10 +11,10 @@
 import { provideI18n } from "./plugins/i18n";
 
 // Language Files
-import en from "./locales/en.json";
-import jp from "./locales/jp.json";
-import tw from "./locales/tw.json";
-import cn from "./locales/cn.json";
+import en from "./locales/en.js";
+import jp from "./locales/jp.js";
+import tw from "./locales/tw.js";
+import cn from "./locales/cn.js";
 
 provideI18n({
   locale: "en",

@@ -1,5 +1,5 @@
 <script setup>
-import * as jp from "/locales/jp.json";
+import * as jp from "/locales/jp.js";
 </script>
 
 # {{jp.slot_mode}}

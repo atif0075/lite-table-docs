@@ -1,5 +1,5 @@
 <script setup>
-import * as tw from "/locales/tw.json";
+import {tw} from "/locales/tw.js";
 </script>
 
 # {{ tw.events }}

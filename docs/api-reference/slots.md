@@ -1,5 +1,5 @@
 <script setup>
-import * as en from "/locales/en.json";
+import {en} from "/locales/en.js";
 </script>
 
 # Slots

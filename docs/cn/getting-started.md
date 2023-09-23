@@ -1,5 +1,5 @@
 <script setup>
-import * as cn from "/locales/cn.json";
+import {cn} from "../locales/cn.js";
 </script>
 
 # 首页

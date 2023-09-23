@@ -1,5 +1,5 @@
 <script setup>
-import * as tw from "/locales/tw.json";
+import * as tw from "/locales/tw.js";
 </script>
 
 # {{tw.default_mode}}

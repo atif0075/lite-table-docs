@@ -1,5 +1,5 @@
 <script setup>
-import * as en from "/locales/en.json";
+import {en} from "./locales/en.js";
 import DefaultMode from "./code/simple-examples/default-mode.vue";
 import staticMode from './code/simple-examples/static-mode.vue'
 import vslotmode from './code/simple-examples/v-slot-mode.vue'
