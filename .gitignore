@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# vitepress extras
+docs/.vitepress/dist
+docs/.vitepress/deploys
+docs/.vitepress/.cache
+docs/.vitepress/.temp
+docs/.vitepress/manifest.json
+docs/.vitepress/client
