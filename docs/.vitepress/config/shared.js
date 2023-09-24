@@ -6,7 +6,6 @@ export const sharedConfig = defineConfig({
       dark: "dracula-soft",
       light: "vitesse-light",
     },
-
     attrs: {
       leftDelimiter: "%{",
       rightDelimiter: "}%",
@@ -17,6 +16,9 @@ export const sharedConfig = defineConfig({
   },
   themeConfig: {
     logo: "/assets/logo.svg",
+    search: {
+      provider: "local",
+    },
     // search: {
     //   provider: "local",
     //   placeholder: "Search...",
