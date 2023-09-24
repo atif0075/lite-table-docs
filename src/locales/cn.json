@@ -60,7 +60,7 @@
     "props_grouping_display_desc": "在分类表示表格中定制分类标题",
     "props_start_collapsed_desc": "在一开始就把分类表全部折叠起来",
     "props_is_keep_collapsed_desc": "在画面更新后保持折叠状态",
-    "props_is_vertical_highlight_desc": "在画面更新后保持折叠状态",
+    "props_is_vertical_highlight_desc": "在鼠标碰触的直列显示高亮状态",
 
     "events": "事件",
     "events_do_search_desc": "查询事件<span class=\"text-red-500\">该事件会在换页或是重新排序时自动触发。</span>",

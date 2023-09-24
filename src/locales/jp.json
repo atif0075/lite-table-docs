@@ -60,7 +60,7 @@
     "props_grouping_display_desc": "カスタマイズグルーピングタイトル",
     "props_start_collapsed_desc": "初期化の時、グルーピングを全て折り畳み",
     "props_is_keep_collapsed_desc": "画面更新後も折り畳み状態を保持する",
-    "props_is_vertical_highlight_desc": "マウスオーバーの行をハイライトで表示する",
+    "props_is_vertical_highlight_desc": "マウスオーバーの列をハイライトで表示する",
 
     "events": "イベント",
     "events_do_search_desc": "検索イベント（表示順の変更やページングされてから自動的に発火される）",

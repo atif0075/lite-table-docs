@@ -60,7 +60,7 @@
     "props_grouping_display_desc": "在分類顯示表格中客製化分類標題",
     "props_start_collapsed_desc": "在一開始就把分類表全部折疊起來",
     "props_is_keep_collapsed_desc": "在畫面更新後保持折疊狀態",
-    "props_is_vertical_highlight_desc": "在鼠标碰触的直行显示高亮状态",
+    "props_is_vertical_highlight_desc": "在滑鼠碰觸的那一列呈現高亮狀態",
 
     "events": "事件",
     "events_do_search_desc": "查詢事件<span class=\"text-red-500\">該事件會在換頁或是重新排序時自動觸發。</span>",
