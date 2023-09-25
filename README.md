@@ -15,7 +15,7 @@
 
 **NPM**
 
-```bash
+```sh
 npm install vue3-table-lite --save
 ```
 
@@ -40,7 +40,7 @@ import VueTableLite from "vue3-table-lite/ts";
 
 **Default Mode**
 
-```
+```js
 import VueTableLite from 'vue3-table-lite'
 
 export default {
@@ -59,7 +59,7 @@ export default {
   },
 }
 ```
-```
+```vue
 <template>
   <vue-table-lite
     :data="tableData"
@@ -76,7 +76,7 @@ export default {
 
 **V-slot Mode**
 
-```
+```js
 import VueTableLite from 'vue3-table-lite'
 
 export default {
@@ -95,7 +95,7 @@ export default {
   },
 }
 ```
-```
+```vue
 <template>
   <vue-table-lite
     :data="tableData"
@@ -116,7 +116,7 @@ export default {
 
 **Static Mode**
 
-```
+```js
 import VueTableLite from 'vue3-table-lite'
 
 export default {
@@ -135,7 +135,7 @@ export default {
   },
 }
 ```
-```
+```vue
 <template>
   <vue-table-lite
     :data="tableData"
