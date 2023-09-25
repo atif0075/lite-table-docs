@@ -3,8 +3,12 @@ import { defineConfig } from "vitepress";
 export const enConfig = defineConfig({
   title: "Vue 3 Table Lite",
   description: "Light Weight, Faster",
-
   themeConfig: {
+    editLink: {
+      pattern:
+        "https://github.com/atif0075/lite-table-docs/edit/master/docs/:path",
+      text: "Edit this page on GitHub",
+    },
     logo: "/assets/logo.svg",
     nav: [
       { text: "Home", link: "/getting-started" },

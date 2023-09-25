@@ -5,6 +5,11 @@ export const jpConfig = defineConfig({
   description: "軽量、高速",
 
   themeConfig: {
+    editLink: {
+      pattern:
+        "https://github.com/atif0075/lite-table-docs/edit/master/docs/:path",
+        text: 'GitHub でこのページを編集する'
+    },
     logo: "/assets/logo.svg",
     nav: [
       { text: "ホーム", link: "/jp/getting-started" },

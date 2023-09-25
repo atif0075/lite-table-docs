@@ -5,6 +5,11 @@ export const cnConfig = defineConfig({
   description: "轻量、快速",
 
   themeConfig: {
+    editLink: {
+      pattern:
+        "https://github.com/atif0075/lite-table-docs/edit/master/docs/:path",
+      text: "在 GitHub 上编辑此页面",
+    },
     logo: "/assets/logo.svg",
     nav: [
       { text: "首页", link: "/cn/getting-started" },

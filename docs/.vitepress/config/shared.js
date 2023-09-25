@@ -4,6 +4,7 @@ export const sharedConfig = defineConfig({
   title: "Vue 3 Lite Table",
   description:
     "A simple and lightweight data table component for Vue.js 3. Features sorting, paging, row check, dynamic data rendering, supported TypeScript, and more.",
+
   head: [
     [
       "meta",
@@ -125,6 +126,7 @@ export const sharedConfig = defineConfig({
   ssr: {
     noExternal: ["TableLite"],
   },
+  lastUpdated: true,
   themeConfig: {
     logo: "/assets/logo.svg",
     search: {
