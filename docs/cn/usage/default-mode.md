@@ -1,6 +1,6 @@
 # 预设模式
 
-预设模式\_description
+如果您始终使用API​​获取行数据。选择此模式。
 
 ::: code-group
 
