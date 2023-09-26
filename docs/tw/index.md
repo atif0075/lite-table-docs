@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 開始使用
-      link: /cn/getting-started
+      link: /tw/getting-started
     - theme: alt
       text: 程式碼
       link: https://github.com/linmasahiro/vue3-table-lite
