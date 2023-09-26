@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export const twConfig = defineConfig({
-  title: "Vue 3 表格 Lite",
+  title: "Vue 3 Table Lite",
   description: "輕量、快速",
 
   themeConfig: {
@@ -13,7 +13,7 @@ export const twConfig = defineConfig({
     logo: "/assets/logo.svg",
     nav: [
       { text: "首頁", link: "/tw/getting-started" },
-      { text: "示例", link: "/tw/advance-examples" },
+      { text: "範例", link: "/tw/advance-examples" },
     ],
 
     sidebar: [
@@ -27,8 +27,8 @@ export const twConfig = defineConfig({
         collapsed: false,
         text: "使用方法",
         items: [
-          { text: "默認模式", link: "/tw/usage/default-mode" },
-          { text: "V-Slot 模式", link: "/tw/usage/v-slot-mode" },
+          { text: "預設模式", link: "/tw/usage/default-mode" },
+          { text: "插槽模式", link: "/tw/usage/v-slot-mode" },
           { text: "靜態模式", link: "/tw/usage/static-mode" },
         ],
       },
@@ -36,17 +36,17 @@ export const twConfig = defineConfig({
         collapsed: false,
         text: "API 參考",
         items: [
-          { text: "Props 屬性", link: "/tw/api-reference/props" },
+          { text: "屬性 Props", link: "/tw/api-reference/props" },
           { text: "事件 Events", link: "/tw/api-reference/events" },
           { text: "插槽 Slots", link: "/tw/api-reference/slots" },
         ],
       },
       {
         collapsed: false,
-        text: "示例",
+        text: "範例",
         items: [
-          { text: "簡單示例", link: "/tw/simple-examples" },
-          { text: "高級示例", link: "/tw/advance-examples" },
+          { text: "簡單範例", link: "/tw/simple-examples" },
+          { text: "進階範例", link: "/tw/advance-examples" },
         ],
       },
     ],

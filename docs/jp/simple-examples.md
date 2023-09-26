@@ -5,9 +5,9 @@ import vslotmode from '../code/simple-examples/v-slot-mode.vue'
 
 </script>
 
-# 簡単な例
+# シンプル
 
-次の例は簡単であり、単純なユースケースのリファレンスとして使用することを目的としています。
+ここは、シンプルな例を紹介します。
 
 ## デフォルトモード
 
@@ -151,3 +151,21 @@ export default defineComponent({
  <vslotmode />
 
 :::
+
+<style>
+.vtl tr:nth-child(2n) {
+    background-color: white;
+}
+.vtl-tbody-checkbox {
+    color-scheme: auto;
+}
+.vtl-paging {
+    color: black;
+}
+.vtl-paging-pagination-page-li {
+    margin-top: 0px !important;
+}
+.vtl select {
+    -webkit-appearance: auto;
+}
+</style>

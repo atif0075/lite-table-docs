@@ -1,16 +1,16 @@
 # Slots
 
-这是可选的。但是，如果启用 V 槽模式，则应该能够写入。
+該功能為選項，但如果你採用了插槽模式，你可以利用下列方式插入組件。
 
-### 字段名称
+### 欄位說明
 
-- 描述: <Badge> 要显示在该区块的數據 </Badge>
+- 描述: <Badge> 要顯示在該欄位的組件 </Badge>
 
 ## 如何使用
 
 ::: code-group
 
-```vue [用法1 (对于每个字段进行不同渲染)]
+```vue [用法1 (對每個欄位進行不同渲染)]
 <template v-slot:id="data">
   <YourComponent>{{ data.value.id }}</YourComponent>
 </template>
@@ -22,7 +22,7 @@
 </template>
 ```
 
-```vue [用法2 (所有字段进行相同渲染)]
+```vue [用法2 (對所有欄位進行相同渲染)]
 <template v-for="(col, i) of table.columns" v-slot:[col.field]="data" :key="i">
   <YourComponent>{{ data.value[col.field] }}</YourComponent>
 </template>

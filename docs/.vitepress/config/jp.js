@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export const jpConfig = defineConfig({
-  title: "Vue 3 テーブル Lite",
+  title: "Vue 3 Table Lite",
   description: "軽量、高速",
 
   themeConfig: {
@@ -28,7 +28,7 @@ export const jpConfig = defineConfig({
         text: "使用法",
         items: [
           { text: "デフォルトモード", link: "/jp/usage/default-mode" },
-          { text: "V-Slot モード", link: "/jp/usage/v-slot-mode" },
+          { text: "スロットモード", link: "/jp/usage/v-slot-mode" },
           { text: "静的モード", link: "/jp/usage/static-mode" },
         ],
       },
@@ -45,8 +45,8 @@ export const jpConfig = defineConfig({
         collapsed: false,
         text: "例",
         items: [
-          { text: "シンプルな例", link: "/jp/simple-examples" },
-          { text: "高度な例", link: "/jp/advance-examples" },
+          { text: "シンプル", link: "/jp/simple-examples" },
+          { text: "アドバンス", link: "/jp/advance-examples" },
         ],
       },
     ],

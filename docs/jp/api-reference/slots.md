@@ -1,16 +1,16 @@
 # Slots
 
-これはオプションです。しかし、あなたが有効にした場合 V-slot モード、あなたはそれを書くべきであるべきです。
+この機能はオプションです。スロットモードを有効する場合、下記のようなやり方でコンポーネントを利用することができます。
 
-### 字段名称
+### コラム説明
 
-- 説明する: <Badge> ブロックに表示されるデータ </Badge>
+- 説明: <Badge> コラムに表示させたいコンポーネント </Badge>
 
 ## 如何使用
 
 ::: code-group
 
-```vue [使用法1 (各フィールドの異なるレンダリング)]
+```vue [使用法1 (コラムにそれぞれ違うコンポーネントを利用する場合)]
 <template v-slot:id="data">
   <YourComponent>{{ data.value.id }}</YourComponent>
 </template>
@@ -22,7 +22,7 @@
 </template>
 ```
 
-```vue [使用法2 (すべてのフィールドは同じレンダリングを実行します)]
+```vue [使用法2 (すべてのコラムに同じコンポーネントを利用する場合)]
 <template v-for="(col, i) of table.columns" v-slot:[col.field]="data" :key="i">
   <YourComponent>{{ data.value[col.field] }}</YourComponent>
 </template>

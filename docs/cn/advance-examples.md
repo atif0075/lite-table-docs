@@ -76,4 +76,19 @@ import customizePageDropdown from "../code/advance-examples/cus-page-drop.vue"
 .vtl-thead-th input{
     background-color: #fff;
 }
+.vtl tr:nth-child(2n) {
+    background-color: white;
+}
+.vtl-tbody-checkbox {
+    color-scheme: auto;
+}
+.vtl-paging {
+    color: black;
+}
+.vtl-paging-pagination-page-li {
+    margin-top: 0px !important;
+}
+.vtl select {
+    -webkit-appearance: auto;
+}
 </style>

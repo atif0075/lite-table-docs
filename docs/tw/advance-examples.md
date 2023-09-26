@@ -16,64 +16,79 @@ import customizePageDropdown from "../code/advance-examples/cus-page-drop.vue"
 
 </script>
 
-# 先進的使用案例
+# 進階範例
 
-下面的示例旨在作為更高級和更複雜的使用案例的參考。
+這裡介紹了一些較為進階且較複雜的範例。
 
 ## 分組
 
 <grouping/>
 
-## 分組（帶切換）
+## 分組（含開閉功能）
 
 <groupingWithToggle/>
 
-## 自定義顯示數據
+## 客製化欄位顯示
 
 <cusDisplayData />
 
-## 過濾
+## 過濾器
 
 <Filter />
 
-## 非同步過濾
+## 非同步過濾器
 
 <asyncFilter />
 
-## 列過濾
+## 列過濾器
 
 <filterInTable />
 
-## 自定義樣式
+## 客製化外觀
 
 <customizeStyle/>
 
-## 自定義樣式（2）
+## 客製化外觀（2）
 
 <customizeStyle2/>
 
-## 自定義消息
+## 客製化語言
 
 <customizeMessages/>
 
-## 自定義頁面下拉菜單
+## 客製化分頁下拉選單
 
 <customizePageDropdown/>
 
-## 捕捉行點擊事件
+## 監聽行點擊事件
 
 <catchRow/>
 
-## 固定第一列（水平滾動）
+## 鎖定第一列（水平滾動）
 
 <fixedFirstColumn/>
 
-## 固定表頭和第一列（滾動）
+## 鎖定表頭和第一列（滾動）
 
 <fixedHeaderAndFirstColumn/>
 
 <style>
 .vtl-thead-th input{
     background-color: #fff;
+}
+.vtl tr:nth-child(2n) {
+    background-color: white;
+}
+.vtl-tbody-checkbox {
+    color-scheme: auto;
+}
+.vtl-paging {
+    color: black;
+}
+.vtl-paging-pagination-page-li {
+    margin-top: 0px !important;
+}
+.vtl select {
+    -webkit-appearance: auto;
 }
 </style>

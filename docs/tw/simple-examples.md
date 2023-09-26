@@ -5,19 +5,19 @@ import vslotmode from '../code/simple-examples/v-slot-mode.vue'
 
 </script>
 
-# 简单的例子
+# 簡單範例
 
-以下示例很简单，旨在用作简单用例的参考。
+以下為簡單範例，您可以作為入門的參考。
 
 ## 預設模式
 
-::: tip 运行示例
+::: tip Runnig example
 
  <DefaultMode />
 
 :::
 
-::: details 源代码
+::: details 程式碼
 
 ```vue [template]
 <template>
@@ -151,3 +151,21 @@ export default defineComponent({
  <vslotmode />
 
 :::
+
+<style>
+.vtl tr:nth-child(2n) {
+    background-color: white;
+}
+.vtl-tbody-checkbox {
+    color-scheme: auto;
+}
+.vtl-paging {
+    color: black;
+}
+.vtl-paging-pagination-page-li {
+    margin-top: 0px !important;
+}
+.vtl select {
+    -webkit-appearance: auto;
+}
+</style>
