@@ -14,7 +14,7 @@ If you are always use API to get rows data. choose this mode.
   :sortable="table.sortable"
   @do-search="doSearch"
   @is-finished="tableLoadingFinish"
-/></table-lite>
+/>
 </template>
 ```
 
