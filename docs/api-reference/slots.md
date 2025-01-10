@@ -2,6 +2,26 @@
 
 This is optional. However, if you enable V-slot mode, you should be able to write it.
 
+### Header
+
+- Description: <Badge> Custom header by v-slot </Badge>
+
+## Usage
+- Slot name: `vtl-header-<field-name>`
+
+```vue
+<template v-slot:vtl-header-id="data">
+  <YourComponent>{{ data.value }}</YourComponent>
+</template>
+<template v-slot:vtl-header-name="data">
+  <YourComponent>{{ data.value }}</YourComponent>
+</template>
+<template v-slot:vtl-header-email="data">
+  <YourComponent>{{ data.value }}</YourComponent>
+</template>
+```
+
+
 ### Field's name
 
 - Description: <Badge> Show Row data's scope </Badge>
