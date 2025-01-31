@@ -193,3 +193,16 @@ Some more options related to pageOptions.
 | Name              | Description                         | Required | Type    | Default Options |
 | ----------------- | ----------------------------------- | -------- | ------- | --------------- |
 | is-keep-collapsed | Keep collapsed status after refresh | No       | Boolean | false           |
+
+## skeleton-screen
+
+| Name              | Description                         | Required | Type    | Default Options |
+| ----------------- | ----------------------------------- | -------- | ------- | --------------- |
+| skeleton-screen | Show skeleton loading screen | No       | Boolean | false           |
+
+::: details More Options
+Some more options related to skeleton-screen.
+
+| Field | Description                         | Required | Type    | Default Options |
+| ----------------- | ----------------------------------- | -------- | ------- | --------------- |
+| skeleton-rows | Show the number of rows during the loading screen | Yes       | Number | 5           |

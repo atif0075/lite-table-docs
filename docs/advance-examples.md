@@ -13,6 +13,7 @@ import customizeStyle from "./code/advance-examples/custom-style.vue"
 import customizeStyle2 from "./code/advance-examples/custom-style-2.vue"
 import customizeMessages from "./code/advance-examples/cus-message.vue"
 import customizePageDropdown from "./code/advance-examples/cus-page-drop.vue"
+import skeletonScreen from "./code/advance-examples/skeleton-screen.vue"
 
 </script>
 
@@ -71,6 +72,10 @@ The following examples are more advanced and are meant to be used as a reference
 ## Fixed header and first column(scrolling)
 
 <fixedHeaderAndFirstColumn/>
+
+## Skeleton screen
+
+<skeletonScreen/>
 
 <style>
 .vtl-thead-th input{

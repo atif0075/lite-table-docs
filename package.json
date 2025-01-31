@@ -20,7 +20,7 @@
     "vue-router": "^4.0.15",
     "vue3-click-away": "^1.2.4",
     "vue3-highlightjs": "^1.0.5",
-    "vue3-table-lite": "^1.4.2"
+    "vue3-table-lite": "^1.4.3"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.0.0",

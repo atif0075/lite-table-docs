@@ -13,6 +13,7 @@ import customizeStyle from "../code/advance-examples/custom-style.vue"
 import customizeStyle2 from "../code/advance-examples/custom-style-2.vue"
 import customizeMessages from "../code/advance-examples/cus-message.vue"
 import customizePageDropdown from "../code/advance-examples/cus-page-drop.vue"
+import skeletonScreen from "../code/advance-examples/skeleton-screen.vue"
 
 </script>
 
@@ -71,6 +72,10 @@ import customizePageDropdown from "../code/advance-examples/cus-page-drop.vue"
 ## 鎖定表頭和第一列（滾動）
 
 <fixedHeaderAndFirstColumn/>
+
+## 骨架屏
+
+<skeletonScreen/>
 
 <style>
 .vtl-thead-th input{
